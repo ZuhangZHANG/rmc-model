@@ -1,0 +1,6 @@
+# Python and Sphinx ignore patterns 
+__pycache__/ 
+*.pyc 
+.env 
+docs/_build/ 
+docs/source/_build/ 
