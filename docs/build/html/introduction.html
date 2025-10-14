@@ -6,20 +6,20 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>模型概述 &mdash; RMC test documentation</title>
+  <title>模型概述 &mdash; RMC v0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=92fd9be5" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=93654010"></script>
+      <script src="_static/documentation_options.js?v=34cd777e"></script>
       <script src="_static/doctools.js?v=9a2dae69"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="this is a test page of model ducumentation" href="socio_econ.html" />
+    <link rel="next" title="社会经济因素" href="socio_econ.html" />
     <link rel="prev" title="Welcome to RUC-MESSAGEix-China (RMC) documentation!" href="index.html" /> 
 </head>
 
@@ -47,12 +47,12 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">模型概述</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">背景</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">基本原理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">时空分辨率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">时空分辨率</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="socio_econ.html">this is a test page of model ducumentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ref_ener_sys.html">this is a test page of model ducumentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rmc_steel.html">this is a test page of model ducumentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="socio_econ.html">社会经济因素</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ref_ener_sys.html">参考能源系统</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rmc_steel.html">RMC|Steel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
@@ -90,22 +90,32 @@
 <h2>基本原理<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <p>RMC模型基于全球著名综合评估建模框架MESSAGEix，该框架由国际应用系统分析研究所（IIASA）开发和维护，并广泛应用于综合评估模型（Integrated Assessment Models, IAM）和能源系统模型（Energy System Models, ESM），可以反映能源系统长期动态演化，并包含了丰富的技术细节（IIASA ECE Programme, 2020）。虽然该框架通常用于分析整体的宏观能源系统，但也可用于单个能源部门的研究，如电力或热力部门。
 作为一种优化建模框架，其总体目标函数是最小化总贴现系统成本，包括所有能源技术的投资和运营成本、可耗竭资源的开采成本和可再生能源成本、排放税以及其他支出。此外，可根据需要向模型添加约束，例如限制能源系统的总碳排放（或单个技术的碳排放）。
-MESSAGEix的更多特性和功能可参阅其在线文档 以及相关文献，例如（Huppmann et al., 2019）。源代码可从GitHub网站获得 。</p>
+MESSAGEix的更多特性和功能可参阅其在线文档<a class="footnote-reference brackets" href="#id7" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>以及相关文献，例如（Huppmann et al., 2019）。源代码可从GitHub网站获得<a class="footnote-reference brackets" href="#id8" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>。</p>
 </section>
-<section id="id4">
-<h2>时空分辨率<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<section id="id6">
+<h2>时空分辨率<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
 <p>RMC模型目前地理分区覆盖我国内地31个省级行政区（暂不包含港澳台），考虑省级尺度的能源系统、经济系统和资源环境特征。
 为评估我国双碳目标的系统性影响，RMC模型目前校准至2022年，建模时间跨度为2025至2060年，以5年步长运行。由于MESSAGEix框架的灵活性，模型的时间范围和时间步长均可根据研究需求进行灵活修改。</p>
-<p><a class="reference internal" href="references.html"><span class="std std-doc">查看完整参考文献列表</span></a></p>
 </section>
 </section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id7" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">1</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://docs.messageix.org/en/latest/index.html">MESSAGEix框架文档</a></p>
+</aside>
+<aside class="footnote brackets" id="id8" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">2</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://github.com/iiasa/message_ix">MESSAGEix GitHub仓库</a></p>
+</aside>
+</aside>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to RUC-MESSAGEix-China (RMC) documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="socio_econ.html" class="btn btn-neutral float-right" title="this is a test page of model ducumentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="socio_econ.html" class="btn btn-neutral float-right" title="社会经济因素" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

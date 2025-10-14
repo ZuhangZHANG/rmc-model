@@ -9,20 +9,23 @@
 project = 'RMC'
 author = 'School of Applied Economics, Renmin University of China'
 copyright = f'2025, {author}'
-release = 'test'
+release = 'v0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
     'myst_parser',       # 支持 Markdown
-    'sphinx_markdown_tables', # 支持 Markdown 表格
+    # 'sphinx_markdown_tables', # 支持 Markdown 表格
     'sphinx.ext.mathjax', # 数学公式
+    'sphinx.ext.autosectionlabel',  # 必须添加这个才能使用交叉引用
 ]
 
 myst_enable_extensions = [
     "amsmath",    # 支持LaTeX数学环境（如 \begin{align}）
     "dollarmath", # 支持美元符号数学（如 $...$ 和 $$...$$）
+    "colon_fence",
+    "deflist",
 ]
 
 # 确保使用 MathJax 3.x 的路径

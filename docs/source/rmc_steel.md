@@ -1,15 +1,14 @@
-# this is a test page of model ducumentation
+# RMC|Steel
 
+下面是一个带题注的表格示例：
 
+```{table} 示例表格标题
+:name: my-table
 
-test test test
+| 列1 | 列2 | 列3 |
+|-----|-----|-----|
+| A   | B   | C   |
+| D   | E   | F   |
+```
 
-## introduction to RMC
-
-
-
-dfdfdfdfsalkdfj;lasdkgjads
-
-formula $abc^2$.
-
- ![cap map](_static/fig1.png)
+如 {ref}`表 1 <my-table>` 所示，我们展示了一个简单的表格示例。
