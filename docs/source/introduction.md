@@ -2,7 +2,7 @@
 
 ## 背景
 
-RUC-MESSAGEix-China（简称RMC模型）是基于开源建模框架MESSAGEix联合开发（IIASA ECE Programme, 2020）的中国省级尺度能源-经济-环境（E3）综合评估模型，由中国人民大学应用经济学院周文戟教授团队和华东理工大学任宏涛副教授联合开发。
+RUC-MESSAGEix-China（简称RMC模型）是基于开源建模框架MESSAGEix联合开发（IIASA ECE Programme, 2020）的中国省级尺度能源-经济-环境（E3）综合评估模型，由x教授团队和x副教授联合开发。
 
 ## 基本原理
 
