@@ -3,90 +3,168 @@
 
 <div style="text-indent: -2em; margin-left: 2em;">
 
-Bai C., & Zhang Q. (2017). [China’s Growth Potential to 2050: A Supply-side Forecast Based on Cross-country Productivity Convergence and Its Featured Labor Force](https://doi.org/10.16513/j.cnki.cje.2017.04.001). _China Journal of Economics_, 4(4), 1–27.
+AGICO Cement Plant Equipment (2025) [Lime Rotary Kiln](https://cementplantequipment.com/products/lime-rotary-kiln/). 
 
-[CEIC Open Data](https://www.ceicdata.com). (2024). CEIC.
+Arasto, A. (2015) [“Techno-economic evaluation ofsigniﬁcantCO2emission reductions in the iron and steelindustrywith CCS.”](https://publications.vtt.fi/pdf/science/2015/S111.pdf)
 
-Chen, Y., Guo, F., Wang, J., Cai, W., Wang, C., & Wang, K. (2020). [Provincial and gridded population projection for China under shared socioeconomic pathways from 2010 to 2100](https://doi.org/10.1038/s41597-020-0421-y). _Scientific Data_, 7(1), 83.
+Bai C. and Zhang Q. (2017) [“China’s Growth Potential to 2050: A Supply-side Forecast Based on Cross-country Productivity Convergence and Its Featured Labor Force,”](https://doi.org/10.16513/j.cnki.cje.2017.04.001) China Journal of Economics, 4(4), pp. 1–27.
 
-China Meteorological Administration. (2023). [_China Wind and Solar Energy Resources Bulletin (2022)_](https://www.cma.gov.cn/zfxxgk/gknr/qxbg/202304/t20230421_5454513.html).
+Baltac, S. et al. (2022) [Low-Carbon Hydrogen from Natural Gas: Global Roadmap.](https://publications.ieaghg.org/technicalreports/2022-07%20Low-Carbon%20Hydrogen%20from%20Natural%20Gas%20Global%20Roadmap.pdf) 2022–07. Cheltenham, UK: IEA Greenhouse Gas R&D Programme (IEAGHG).
 
-China National Administration of Coal Geology (with 程爱国). (2016). _China Occurrence Regularity of Coal Resources and Resource Evaluation_ (Di 1 ban). Science Press.
+Benavides, K. et al. (2024) [“Mitigating emissions in the global steel industry: Representing CCS and hydrogen technologies in integrated assessment modeling,”](https://doi.org/10.1016/j.ijggc.2023.103963) International Journal of Greenhouse Gas Control, 131, p. 103963. 
 
-Christensen, P., Gillingham, K., & Nordhaus, W. (2018). [Uncertainty in forecasts of long-run economic growth](https://doi.org/10.1073/pnas.1713628115). _Proceedings of the National Academy of Sciences_, 115(21), 5409–5414.
+Biomass Energy Industry Promotion Association et al. (2021) 3060 Blue Book of Zero-carbon Biomass Potential.
 
-Christoph Heinemann, Dr. Roman Mendelevitch, Susanne Krieger, Kaya Dünzen, Dr. Katharina Göckeler, Dr. Markus Haller, Christian Winger, & Johannes Aschauer. (2024). [_PTX Business Opportunity Analyser (BOA): Data Documentation. Documentation of data sources and data processing, version 2.1_](https://www.agora-industry.org/fileadmin/Projects/2022/2022-01_INT_PtX-Dialog/Oeko-Institut_2024_PTXBOA_Data_Documentation_v_2.1.pdf). Oeko-Institut.
+Biomass Energy Industry Promotion Association and Energy Foundation (2023) Strategic Positioning and Application Scenarios for Promoting Pollution Reduction and Carbon Emission Reduction through Clean Utilization of Biomass Energy.
 
-Chumin. (2025). [_Maerz Vertical Calcination Lime Kiln Double Chamber Shaft HPS Operation_](https://www.cementl.com/maerz-vertical-calcination-lime-kiln-double-chamber-shaft). TONGLI HEAVY MACHINERY.
+Butterworth, P. (2024) [Challenges in achieving >90% carbon capture: Technical vs economic factors.](https://www.crugroup.com/cn/communities/thought-leadership/2024/Challenges-in-achieving-90percent-carbon-capture-Technical-vs-economic-factors/))
 
-[Dianchacha Power Data Platform](https://www.dianchacha.cn). (2024).
+CEIC (2024) CEIC Open Data.
 
-Ember. (2023). [_Global Electricity Review 2023_](https://ember-energy.org/latest-insights/global-electricity-review-2023). EMBER.
+CEIC Data (2025) [Average price of natural gas in 36 cities.](https://www.ceicdata.com/zh-hans/china/price-monitoring-center-ndrc-36-city-monthly-avg-transaction-price-production-material/cn-usage-price-36-city-avg-natural-gas-natural-gas-for-industry)
 
-EMBER. (2024). _Global Electricity Review 2024_. Ember.
+Chen, Y. et al. (2020) [“Provincial and gridded population projection for China under shared socioeconomic pathways from 2010 to 2100,”](https://doi.org/10.1038/s41597-020-0421-y) Scientific Data, 7(1), p. 83. 
 
-Energy Transitions Commission. (2023). [_Making the Hydrogen Economy Possible: Accelerating Clean Hydrogen in an Electrified Economy—Technical Annex_ (Version 1.0)](https://www.energy-transitions.org/wp-content/uploads/2023/04/2022-053-ETC-Hydrogen-Technical-Annex-Final_.pdf).
+China Meteorological Administration (2023) [China Wind and Solar Energy Resources Bulletin (2022).](https://www.cma.gov.cn/zfxxgk/gknr/qxbg/202304/t20230421_5454513.html)
 
-He, Y., Du, E., Liu, P., & Li, Z. (2025). [Decarbonization pathways and layout evolution in China's steel sector](https://doi.org/10.1016/j.rser.2025.115588). _Renewable and Sustainable Energy Reviews_, 215, 115588.
+China Meteorological Administration (2025) [China Wind and Solar Energy Resources Bulletin (2024).](https://www.cma.gov.cn/zfxxgk/gknr/qxbg/202502/t20250211_6847016.html)
 
-Huppmann, D., Gidden, M., Fricko, O., Kolp, P., Orthofer, C., Pimmer, M., Kushin, N., Vinca, A., Mastrucci, A., Riahi, K., & Krey, V. (2019). [The MESSAGEix Integrated Assessment Model and the ix modeling platform (ixmp): An open framework for integrated and cross-cutting analysis of energy, climate, the environment, and sustainable development](https://doi.org/10.1016/j.envsoft.2018.11.012). _Environmental Modelling & Software_, 112, 143–156.
+China National Administration of Coal Geology (2016) China Occurrence Regularity of Coal Resources and Resource Evaluation. Beijing: Science Press.
 
-IEA. (2022). _World Energy Outlook 2022_.
+Chinese Academy of Environmental Planning (2024) [Assessment of Wind and Solar Power Generation Potential in China 2024. ](https://www.caep.org.cn/sy/tdftzhyjzx/zxdt/202406/t20240614_1075803.shtml)
 
-IEA. (2023a). [_Energy Technology Perspectives 2023_](https://www.iea.org/reports/energy-technology-perspectives-2023).
+Christensen, P., Gillingham, K. and Nordhaus, W. (2018) [“Uncertainty in forecasts of long-run economic growth,”](https://doi.org/10.1073/pnas.1713628115)
+ Proceedings of the National Academy of Sciences, 115(21), pp. 5409–5414. 
+Christoph Heinemann et al. (2024) [PTX Business Opportunity Analyser (BOA): Data Documentation. Documentation of data sources and data processing, version 2.1.](https://www.agora-industry.org/fileadmin/Projects/2022/2022-01_INT_PtX-Dialog/Oeko-Institut_2024_PTXBOA_Data_Documentation_v_2.1.pdf)
+ Freiburg and Berlin, Germany: Oeko-Institut. 
+Chumin (2025) [Maerz Vertical Calcination Lime Kiln Double Chamber Shaft HPS Operation.](https://www.cementl.com/maerz-vertical-calcination-lime-kiln-double-chamber-shaft) TONGLI HEAVY MACHINERY. 
 
-IEA. (2023b). _World Energy Investment 2024_. IEA.
+CSteelNews (2023) [Daily Consumption of Sintered Fine Ore Increases and Domestic Pellet Proportion Increases--Analysis of Daily Consumption Structure of Iron Ore in Chinese Steel Enterprises in Late February 2023. ](http://www.csteelnews.com/xwzx/gdpl/202304/t20230406_73453.html)
 
-IEA. (2024, October 22). [_ETP Clean Energy Technology Guide – Data Tools_](https://www.iea.org/data-and-statistics/data-tools/etp-clean-energy-technology-guide).
+CSteelNews (2025) [Domestic scrap market is weak. ](http://www.csteelnews.com/sjzx/gsfx/202508/t20250827_103195.html)
 
-IEA-ETSAP. (2010). [_Iron and Steel: Highlights_](https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I02-Iron%26Steel-GS-AD-gct%201.pdf). IEA-ETSAP (Energy Technology Systems Analysis Programme).
+Dianchacha (2024) [Power data platform. ](https://www.dianchacha.cn)
 
-IIASA ECE Programme. (2020). _Documentation of the MESSAGEix framework_.
+Ember (2023) [Global Electricity Review 2023.](https://ember-energy.org/latest-insights/global-electricity-review-2023) EMBER. 
 
-International Energy Agency. (2020). [_Global Average Levelised Cost of Hydrogen Production by Energy Source and Technology, 2019 and 2050_](https://www.iea.org/data-and-statistics/charts/global-average-levelised-cost-of-hydrogen-production-by-energy-source-and-technology-2019-and-2050).
+EMBER (2024) Global Electricity Review 2024. Ember.
 
-Jing, C., Su, B., Zhai, J., Wang, Y., Lin, Q., Gao, M., Jiang, S., Chen, Z., & Jiang, T. (2022). [Gridded value-added of primary, secondary and tertiary industries in China under Shard Socioeconomic Pathways](https://doi.org/10.1038/s41597-022-01440-y). _Scientific Data_, 9(1), 309.
+Energy Transitions Commission (2023) [Making the Hydrogen Economy Possible: Accelerating Clean Hydrogen in an Electrified Economy — Technical Annex.](https://www.energy-transitions.org/wp-content/uploads/2023/04/2022-053-ETC-Hydrogen-Technical-Annex-Final_.pdf) London, UK: Energy Transitions Commission. 
 
-Leimbach, M., Kriegler, E., Roming, N., & Schwanitz, J. (2017). [Future growth patterns of world regions – A GDP scenario approach](https://doi.org/10.1016/j.gloenvcha.2015.02.005). _Global Environmental Change_, 42, 215–225.
+European Commission. Joint Research Centre. (2022) [Greenhouse gas intensities of the EU steel industry and its trading partners.](https://data.europa.eu/doi/10.2760/170198) LU: Publications Office. 
 
-Li, J. (2019). _Fourth Assessment for Oil and Gas Resource_. Petroleum Industry Press.
+Gallaher, M.P., Depro, B.M. and Agency, U.S.E.P. (2002) [Economic Impact Analysis of the Final Coke Ovens NESHAP: Final Report.](https://www.epa.gov/sites/default/files/2020-07/documents/coke-ovens_eia_neshap_final_08-2002.pdf) EPA-452/R-02-008. Research Triangle Park, NC: U.S. Environmental Protection Agency, Office of Air Quality Planning and Standards. 
 
-Lu, X., Chen, S., Nielsen, C. P., Zhang, C., Li, J., Xu, H., Wu, Y., Wang, S., Song, F., Wei, C., He, K., McElroy, M. B., & Hao, J. (2021). [Combined solar power and storage as cost-competitive and grid-compatible supply for China's future carbon-neutral electricity system](https://doi.org/10.1073/pnas.2103471118). _Proceedings of the National Academy of Sciences_, 118(42), e2103471118.
+Hanssen, S.V. et al. (2020) [“The climate change mitigation potential of bioenergy with carbon capture and storage,”](https://doi.org/10.1038/s41558-020-0885-y) Nature Climate Change, 10(11), pp. 1023–1029. 
 
-McElroy, M. B., Lu, X., Nielsen, C. P., & Wang, Y. (2009). [Potential for Wind-Generated Electricity in China](https://doi.org/10.1126/science.1175706). _Science_, 325(5946), 1378–1380.
+He, Y. et al. (2025) [“Decarbonization pathways and layout evolution in China’s steel sector,”](https://doi.org/10.1016/j.rser.2025.115588) Renewable and Sustainable Energy Reviews, 215, p. 115588. 
 
-McGlade, C., & Ekins, P. (2015). [The geographical distribution of fossil fuels unused when limiting global warming to 2 °C](https://doi.org/10.1038/nature14016). _Nature_, 517(7533), 187–190.
+Huppmann, D. et al. (2019) [“The MESSAGEix Integrated Assessment Model and the ix modeling platform (ixmp): An open framework for integrated and cross-cutting analysis of energy, climate, the environment, and sustainable development,”](https://doi.org/10.1016/j.envsoft.2018.11.012) Environmental Modelling & Software, 112, pp. 143–156. 
 
-Ministry of Natural Resources of the People's Republic of China. (2021). [_National Petroleum and Natural Gas Resources Exploration and Mining Reports 2020_](http://gi.m.mnr.gov.cn/202109/t20210918_2681270.html).
+IEA (2013) [Iron and Steel CCS Study (Techno-Economics Integrated Steel Mill.](https://ieaghg.org/publications/iron-and-steel-ccs-study-techno-economics-integrated-steel-mill/) Cheltenham, UK: IEA Greenhouse Gas R&D Programme. 
 
-National Bureau of Statistics of China. (2022). [_China Statistical Yearbook 2022_](https://www.stats.gov.cn/sj/ndsj/2022/indexch.htm).
+IEA (2019) [“The Future of Hydrogen.”] (https://iea.blob.core.windows.net/assets/9e3a3493-b9a6-4b7d-b499-7ca48e357561/The_Future_of_Hydrogen.pdf)
 
-National Bureau of Statistics of China. (2023). [_China Statistical Yearbook 2023_](https://www.stats.gov.cn/sj/ndsj/2023/indexch.htm).
+IEA (2020) Global average levelised cost of hydrogen production by energy source and technology, 2019 and 2050 – Charts – Data & Statistics, IEA. (https://www.iea.org/data-and-statistics/charts/global-average-levelised-cost-of-hydrogen-production-by-energy-source-and-technology-2019-and-2050)
 
-National Bureau of Statistics of China. (2024). [_China Statistical Yearbook 2024_](https://www.stats.gov.cn/sj/ndsj/2024/indexch.htm).
+IEA (2022) World Energy Outlook 2022.
 
-O'Neill, B. C., Kriegler, E., Ebi, K. L., Kemp-Benedict, E., Riahi, K., Rothman, D. S., Van Ruijven, B. J., Van Vuuren, D. P., Birkmann, J., Kok, K., Levy, M., & Solecki, W. (2017). [The roads ahead: Narratives for shared socioeconomic pathways describing world futures in the 21st century](https://doi.org/10.1016/j.gloenvcha.2015.01.004). _Global Environmental Change_, 42, 169–180.
+IEA (2023a) [Energy Technology Perspectives 2023. ](https://www.iea.org/reports/energy-technology-perspectives-2023)
 
-O'Neill, B. C., Kriegler, E., Riahi, K., Ebi, K. L., Hallegatte, S., Carter, T. R., Mathur, R., & Vuuren, D. P. (2014). [A new scenario framework for climate change research: The concept of shared socioeconomic pathways](https://doi.org/10.1007/s10584-013-0905-2). _Climatic Change_, 122(3), 387–400.
+IEA (2023b) World Energy Investment 2024. IEA.
 
-Pan J., Su B., Wang Y., Jing C., Huo J., & Jiang T. (2020). Spatio-temporal changes of output value from the primary, secondary and tertiary industries for 2020-2050 under the Shared Socioeconomic Pathways. _Climate Change Research_, 16(6), 725–737.
+IEA (2024) [ETP Clean Energy Technology Guide – Data Tools,](https://www.iea.org/data-and-statistics/data-tools/etp-clean-energy-technology-guide) IEA. 
 
-Reliable Plant. (2008, May 5). [Sunoco to build coke facility in Granite City, Illinois](https://www.reliableplant.com/Read/11674/sunoco-to-build-coke-facility-in-granite-city%2C-illinois).
+IEA Greenhouse Gas R&D Programme (2024) [Clean Steel: an Environmental and Technoeconomic Outlook of a Disruptive Technology.](https://publications.ieaghg.org/technicalreports/2024-02%20Clean%20Steel%20An%20environmental%20and%20technoeconomic%20outlook%20of%20a%20disruptive%20technology.pdf) IEA GBHG R&D Programme. 
 
-Renmin University of China. (2024). [_CPOST documentation_](http://ae.ruc.edu.cn/docs/2025-02/55f9843587594f7ba4975a1124c964f9.pdf).
+IEA-ETSAP (2010) [Iron and Steel: Highlights.](https://iea-etsap.org/E-TechDS/HIGHLIGHTS%20PDF/I02-Iron%26Steel-GS-AD-gct%201.pdf) IEA-ETSAP (Energy Technology Systems Analysis Programme). 
 
-Steelonthenet.com. (2023). [Examples of capital investment costs for iron and steelmaking](https://www.steelonthenet.com/pdf/commerce/capex_examples.pdf).
+IIASA ECE Programme (2020) Documentation of the MESSAGEix framework.
 
-Steelonthenet.com. (2025). [_Iron & steel industry capital investment cost database_ (Version 2025 edition) [Dataset]](https://www.steelonthenet.com/capital-investment/eaf.html).
+Jing, C. et al. (2022) [“Gridded value-added of primary, secondary and tertiary industries in China under Shard Socioeconomic Pathways,”](https://doi.org/10.1038/s41597-022-01440-0) Scientific Data, 9(1), p. 309. 
 
-UN DESA/Population Division. (2024). _World Population Prospects 2024: Summary of Results_.
+Kang, Y. et al. (2020) [“Bioenergy in China: Evaluation of domestic biomass resources and the associated greenhouse gas mitigation potentials,”](https://doi.org/10.1016/j.rser.2020.109842) Renewable and Sustainable Energy Reviews, 127, p. 109842. 
 
-Wang, Y., Chao, Q., Zhao, L., & Chang, R. (2022). [Assessment of wind and photovoltaic power potential in China](https://doi.org/10.1007/s43979-022-00020-w). _Carbon Neutrality_, 1(1), 15.
+kq81.com (2025) [Limestone Price Quotes for Aug 19. ](https://www.kq81.com/AspCode/KyxtShow.asp?ArticleId=534897)
 
-Wang, Y., Wen, Z., Xu, M., & Doh Dinga, C. (2025). [Long-term transformation in China's steel sector for carbon capture and storage technology deployment](https://doi.org/10.1038/s41467-025-59205-3). _Nature Communications_, 16(1), 4251.
+Leimbach, M. et al. (2017) [“Future growth patterns of world regions – A GDP scenario approach,”](https://doi.org/10.1016/j.gloenvcha.2015.02.005) Global Environmental Change, 42, pp. 215–225. 
 
-Welsby, D., Price, J., Pye, S., & Ekins, P. (2021). [Unextractable fossil fuels in a 1.5 °C world](https://doi.org/10.1038/s41586-021-03821-8). _Nature_, 597(7875), 230–234.
+Li, J. (2019) Fourth Assessment for Oil and Gas Resource. Beijing: Petroleum Industry Press.
 
-Yang Y., Huo J., Su B., Jing C., & Jiang T. (2024). National and provincial economy projection databases under Shared Socioeconomic Pathways (SSP1−5)_v2. _Climate Change Research_, 20(4), 498–503.
+Lu, X. et al. (2021) [“Combined solar power and storage as cost-competitive and grid-compatible supply for China’s future carbon-neutral electricity system,”](https://doi.org/10.1073/pnas.2103471118) Proceedings of the National Academy of Sciences, 118(42), p. e2103471118. 
+
+McElroy, M.B. et al. (2009) [“Potential for Wind-Generated Electricity in China,”](https://doi.org/10.1126/science.1175706) Science, 325(5946), pp. 1378–1380. 
+
+McGlade, C. and Ekins, P. (2015) [“The geographical distribution of fossil fuels unused when limiting global warming to 2 °C,”](https://doi.org/10.1038/nature14016) Nature, 517(7533), pp. 187–190. 
+
+Ministry of Natural Resources of the People’s Republic of China (2021) [National Petroleum and Natural Gas Resources Exploration and Mining Reports 2020. ](http://gi.m.mnr.gov.cn/202109/t20210918_2681270.html)
+
+Nancy Margolis and Ross Brindle (2000) [Energy and Environmental Profile of the U.S. Iron and Steel Industry. ](https://www.energy.gov/sites/prod/files/2013/11/f4/steel_profile.pdf) Energetics, Incorporated. 
+
+National Bureau of Statistics of China (2022) [China Statistical Yearbook 2022. ](https://www.stats.gov.cn/sj/ndsj/2022/indexch.htm)
+
+National Bureau of Statistics of China (2023) [China Statistical Yearbook 2023. ](https://www.stats.gov.cn/sj/ndsj/2023/indexch.htm)
+
+National Bureau of Statistics of China (2024) [China Statistical Yearbook 2024. ](https://www.stats.gov.cn/sj/ndsj/2024/indexch.htm)
+
+National Bureau of Statistics of China (2025) [Market price changes of important means of production in circulation in mid-January 2025. ](https://www.stats.gov.cn/sj/zxfb/202501/t20250123_1958423.html)
+
+Nie, Y. et al. (2020) [“Spatial distribution of usable biomass feedstock and technical bioenergy potential in China,”](https://doi.org/10.1111/gcbb.12651) GCB Bioenergy, 12(1), pp. 54–70. 
+
+OECD (2025) [Hydrogen in steel: Addressing emissions and dealing with overcapacity. ](https://doi.org/10.1787/7e2edc69-en) 174th ed. OECD Science, Technology and Industry Policy Papers. 
+
+O’Neill, B.C. et al. (2014) [“A new scenario framework for climate change research: the concept of shared socioeconomic pathways,”](https://doi.org/10.1007/s10584-013-0905-2) Climatic Change, 122(3), pp. 387–400. 
+
+O’Neill, B.C. et al. (2017) [“The roads ahead: Narratives for shared socioeconomic pathways describing world futures in the 21st century,”](https://doi.org/10.1016/j.gloenvcha.2015.01.004) Global Environmental Change, 42, pp. 169–180. 
+
+Pan J. et al. (2020) “Spatio-temporal changes of output value from the primary, secondary and tertiary industries for 2020-2050 under the Shared Socioeconomic Pathways,” Climate Change Research, 16(6), pp. 725–737.
+
+Rahbari, A. et al. (2025) [“Solar-thermal sintering of iron ore,”](https://doi.org/10.1016/j.solener.2024.113123) Solar Energy, 286, p. 113123. 
+
+Rechberger, K. et al. (2020) [“Green Hydrogen‐Based Direct Reduction for Low‐Carbon Steelmaking,”](https://doi.org/10.1002/srin.202000110) steel research international, 91(11), p. 2000110. 
+
+Reliable Plant (2008) [Sunoco to build coke facility in Granite City, Illinois. ](https://www.reliableplant.com/Read/11674/sunoco-to-build-coke-facility-in-granite-city%2C-illinois)
+
+Renmin University of China (2025) [CPOST documentation. ](http://ae.ruc.edu.cn/docs/2025-02/55f9843587594f7ba4975a1124c964f9.pdf)
+
+Santos, S. et al. (2013) [Understanding the Cost of Deploying CO2 Capture in an Integrated Steel Mill.](https://publications.ieaghg.org/docs/General_Docs/IEAGHG_Presentations/S._Santos_ESTEP_Mtg_IS_ppt_final.pdf) IEA Greenhouse Gas R&D Programme. 
+
+Shao Le et al. (2024) [“Economic analysis of hydrogen production from coal, natural gas and green electricity,”](https://doi.org/10.16049/j.cnki.lyyhg.2024.02.013) Refining and Chemical Industry, 35(2), pp. 10–14. 
+
+Shenlan Environmental Protection Industry Development Co., Ltd. (2025) [Cement industry, why become global carbon emissions “hot potato”?](https://mp.weixin.qq.com/s/Tq6LJxZq_ATvOirTzWteeA)
+
+State-owned Assets Supervision and Administration Commission of the State Council (2020) [“Circular on Printing and Distributing the Operational Guidelines for the Reform of Mixed Ownership of Central Enterprises.”](https://www.gov.cn/guowuyuan/2019-11/10/content_5450524.htm)
+
+Steelonthenet (2023) [Examples of capital investment costs for iron and steelmaking. ](https://www.steelonthenet.com/pdf/commerce/capex_examples.pdf)
+
+Steelonthenet (2025) [Steel Industry Scope 1 CO2 Emissions by Process Step.](https://www.steelonthenet.com/kb/scope-1-emissions.html)
+
+Steelonthenet.com (2025) [“Iron & steel industry capital investment cost database.”](https://www.steelonthenet.com/capital-investment/eaf.html)
+
+Tian, Y. et al. (2021) “Development Strategy of Biomass Economy in China,” Strategic Study of CAE, 23(1), pp. 133–140.
+
+Trading Economics (2025) [Iron Ore - Price and figures.](https://zh.tradingeconomics.com/commodity/iron-ore)
+
+UN DESA/Population Division (2024) World Population Prospects 2024: Summary of Results.
+
+Vogl, V., Åhman, M. and Nilsson, L.J. (2018) [“Assessment of hydrogen direct reduction for fossil-free steelmaking,”](https://doi.org/10.1016/j.jclepro.2018.08.279) Journal of Cleaner Production, 203, pp. 736–745. 
+
+Wang Rui et al. (2023) [“A high spatial resolution dataset of China’s biomass resource potential,”](https://kns.cnki.net/kcms2/article/abstract?v=S8jPpdFxNHiTQVeImBYK8mA-BDX98bt1ba36wSf_58WTl8McZReeDpIPpFV2AKyPI9C7qpTScUVZj0x5Cv3s99ThPeWlDVq0aV_2fYsUpxh8eR-sCGLGE1UQy1yjKc1H9hF8PyXLulOJ47DPYW2gPw==&uniplatform=NZKPT&language=gb)
+Scientific Data, 10(1). 
+
+Wang, Y. et al. (2022) [“Assessment of wind and photovoltaic power potential in China,”](https://doi.org/10.1007/s43979-022-00020-w) Carbon Neutrality, 1(1), p. 15. 
+
+Wang, Y. et al. (2025) [“Long-term transformation in China’s steel sector for carbon capture and storage technology deployment,”](https://doi.org/10.1038/s41467-025-59205-3) Nature Communications, 16(1), p. 4251. 
+
+Welsby, D. et al. (2021) [“Unextractable fossil fuels in a 1.5 °C world,”](https://doi.org/10.1038/s41586-021-03821-8) Nature, 597(7875), pp. 230–234. 
+
+Yang Y. et al. (2024) “National and provincial economy projection databases under Shared Socioeconomic Pathways (SSP1−5)_v2,” Climate Change Research, 20(4), pp. 498–503.
+
+Zhang, B. (2018) [Assessment of Raw Material Supply Capability and Energy Potential of Biomass Resources in China.](https://kns.cnki.net/kcms2/article/abstract?v=FC2wxXHna7pdQvqTGMfmETRMzybZx6gtubt6mbrheQJIq-ZBFX2DvoVEsT-o4n9Z2bom8YJuzaK2PHHojDPL7zt80vmC0ZnQXQVIwevLYzZi21w37f6bxOurUyLp0hfV&uniplatform=NZKPT&language=gb) PhD thesis. China Agricultural University. 
+
+Zhang, Q.-Z. et al. (2024) [“Analysis of hydrogen supply and demand in China’s energy transition towards carbon neutrality,”](https://doi.org/10.1016/j.accre.2024.07.013) Advances in Climate Change Research, 15(5), pp. 924–935. 
+
+ZHAO Zedong, LI Jiaxuan, and LI Yuanye (2025) [“Practice of Low-Carbon Production in Modern Long-Process Steel Enterprises,”](https://doi.org/10.13589/j.cnki.yjdl.2025.04.002) Metallurgical Power, (4), pp. 83–87.
+
 
 </div>
