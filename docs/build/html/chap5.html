@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RMC|Steel &mdash; RMC v0.1 documentation</title>
+  <title>5. Transport module: RMC|Transport &mdash; RMC v0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=92fd9be5" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -16,11 +16,13 @@
       <script src="_static/documentation_options.js?v=34cd777e"></script>
       <script src="_static/doctools.js?v=9a2dae69"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]], "processEscapes": true}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="References" href="references.html" />
-    <link rel="prev" title="RMC|Steel" href="chap4.html" /> 
+    <link rel="prev" title="4. Iron and steel module: RMC|Steel" href="chap4.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,9 +48,21 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chap1.html">1. Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chap2.html">2. The Reference Energy System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chap3.html">社会经济因素</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chap4.html">RMC|Steel</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">RMC|Steel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3.html">3. Socio-economic drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap4.html">4. Iron and steel module: RMC|Steel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Transport module: RMC|Transport</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#model-structure">5.1. Model structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stock-and-structure-of-private-passenger-cars">5.2. Stock and structure of private passenger cars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#consumer-choice-for-private-passenger-vehicles">5.3. Consumer choice for private passenger vehicles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vehicle-purchase-price">5.3.1. Vehicle purchase price</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#energy-cost-per-100-km">5.3.2. Energy cost per 100 km</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#driving-range">5.5.5. Driving range</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#refueling-recharging-convenience">5.3.4. Refueling/Recharging convenience</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#projection-for-buses-and-taxis">5.4. Projection for buses and taxis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
@@ -66,7 +80,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">RMC|Steel</li>
+      <li class="breadcrumb-item active">5. Transport module: RMC|Transport</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/chap5.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -76,36 +90,263 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section class="tex2jax_ignore mathjax_ignore" id="rmc-steel">
-<h1>RMC|Steel<a class="headerlink" href="#rmc-steel" title="Link to this heading"></a></h1>
-<p>下面是一个带题注的表格示例：</p>
-<table class="docutils align-default" id="my-table">
-<caption><span class="caption-text">示例表格标题</span><a class="headerlink" href="#my-table" title="Link to this table"></a></caption>
+  <section class="tex2jax_ignore mathjax_ignore" id="transport-module-rmc-transport">
+<h1>5. Transport module: RMC|Transport<a class="headerlink" href="#transport-module-rmc-transport" title="Link to this heading"></a></h1>
+<p>RMC|Transport is a module within the RMC model family focused on the transportation sector, designed to analyze supply-demand dynamics, technology and energy mix, carbon emissions, and other impacts (such as critical metal demand) during the low-carbon transition of China’s transportation sector. The model employs a stock-flow system dynamics approach for modeling. Its geographical coverage includes 31 provincial-level administrative units in mainland China. It incorporates, in a bottom-up manner, major production processes and key technological information relevant to the transportation sector, and has been calibrated based on historical data for vehicle stocks, activity levels, and technology costs.</p>
+<section id="model-structure">
+<h2>5.1. Model structure<a class="headerlink" href="#model-structure" title="Link to this heading"></a></h2>
+<p>As shown in <a class="reference internal" href="#fig-5-1"><span class="std std-ref">Fig. 5-1</span></a>, RMC|Transport primarily covers the road transport sector (with future extensions planned for shipping, rail, and other transport sectors). This includes private vehicles, commercial vehicles, public service vehicles, and other road transport. The energy types considered in the model include gasoline, diesel, electricity, hydrogen, natural gas, and other alternative fuels.</p>
+<figure class="align-center" id="fig-5-1">
+<img alt="_images/fig_5_1.png" src="_images/fig_5_1.png" />
+<figcaption>
+<p><span class="caption-text">Fig. 5-1: Modeled road transport sector.</span><a class="headerlink" href="#fig-5-1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="stock-and-structure-of-private-passenger-cars">
+<h2>5.2. Stock and structure of private passenger cars<a class="headerlink" href="#stock-and-structure-of-private-passenger-cars" title="Link to this heading"></a></h2>
+<p>The model utilizes a system dynamics approach to analyze the stock-flow relationships of private passenger cars. Let <span class="math notranslate nohighlight">\(V_{f,c,a}(t)\)</span> represent the stock of private passenger cars in year <span class="math notranslate nohighlight">\(t\)</span>, with fuel type <span class="math notranslate nohighlight">\(f\)</span>, vehicle body type <span class="math notranslate nohighlight">\(c\)</span>, and vehicle age <span class="math notranslate nohighlight">\(a\)</span>. Aggregating over age groups gives <span class="math notranslate nohighlight">\(V_{f,c}(t)=\sum_{a=0}^A V_{f,c,a}(t)\)</span>. The total stock <span class="math notranslate nohighlight">\(N(t)\)</span> is defined as the sum of stocks across all fuel-body type combinations, i.e., <span class="math notranslate nohighlight">\(N(t)=\sum_{f,c}V_{f,c}(t)\)</span>.</p>
+<p>Denoting the new registrations of private passenger cars in year t as <span class="math notranslate nohighlight">\(n_{f,c}(t)\)</span>, and the number of vehicles retired due to reaching end-of-life as <span class="math notranslate nohighlight">\(r_{f,c,a} (t)\)</span>, the stock-flow relationship is expressed as:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta V_{f,c}(t)=n_{f,c} (t)-\sum_{a=0}^A r_{f,c,a} (t) \tag{5-1}
+\]</div>
+<p>where the retirements satisfy:</p>
+<div class="math notranslate nohighlight">
+\[
+r_{f,c,a}(t)=\alpha_{f,c,a} (t)\cdot V_{f,c,a} (t)\tag{5-2}
+\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(\alpha_{f,c,a}(t)\in[0,1)\)</span> is the retirement risk coefficient for the specific vehicle type.</p>
+<p>The national per capita private passenger car stock <span class="math notranslate nohighlight">\(\bar{N}(t)\)</span> follows a GDP-enhanced Gompertz curve:</p>
+<div class="math notranslate nohighlight">
+\[
+\bar{N}(t)=\gamma_{max}\cdot \text{exp}(-K\cdot \text{exp}(-B\cdot G(t)))+\theta\cdot \bar{N}(t-1)\tag{5-3}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\gamma_{max}\)</span> is the saturation level, <span class="math notranslate nohighlight">\(G(t)\)</span> is the per capita GDP, positive constants <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are the shape and location parameters of the curve, respectively, and the coefficient <span class="math notranslate nohighlight">\(\theta\in [0,1]\)</span> adjusts for the inertia effect of the per capita stock and the income effect. Based on this, the absolute stock level <span class="math notranslate nohighlight">\(N(t)\)</span> is obtained using the population <span class="math notranslate nohighlight">\(POP_t\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+N(t)=\bar{N}(t)\cdot POP_t\tag{5-4}
+\]</div>
+<p>To ensure consistency between macro and micro levels, the annual net change in the private passenger car stock <span class="math notranslate nohighlight">\(\Delta N_t=N(t+1)-N(t)\)</span>, the total new registrations <span class="math notranslate nohighlight">\(n_t=\sum_{f,c}n_{f,c}(t)\)</span>, and the total retirements <span class="math notranslate nohighlight">\(R_t=\sum_{f,c,a}r_{f,c,a}(t)\)</span> must satisfy:</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta N_t=n_t-R_t\tag{5-5}
+\]</div>
+<p>At the fleet level, the recursive relationship with a one-year time step is as follows:</p>
+<div class="math notranslate nohighlight">
+\[
+V_{f,c,a+1}(t+1)=(1-\alpha_{f,c,a}(t))\cdot V_{f,c,a}(t), \forall a≥0\tag{5-6}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+V_{f,c,0}(t+1)=n_{f,c}(t)\tag{5-7}
+\]</div>
+<p>Vehicle lifetime is assumed to follow a Weibull distribution to reflect the empirical pattern that older vehicles are retired more frequently. The retirement risk coefficient can then be calculated from the Weibull distribution parameters:</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_{f,c,a}=1-\frac{S(a+1)}{S(a)} =1-exp\left(-\left[\left(\frac{a+1}{h_{f,c}}\right)^{s_{f,c}}-\left(\frac{a}{h_{f,c}}\right)^{s_{f,c}}\right]\right)\tag{5-8}
+\]</div>
+<p>Alternatively, log-normal or Gamma distributions can be used for simplification.</p>
+<p>The projection results for the ownership of private passenger cars are shown in <a class="reference internal" href="#fig-5-2"><span class="std std-ref">Fig. 5-2</span></a>. Currently, the number of private passenger cars per 100 people shows a significant positive correlation with economic development levels. Economically developed regions like Zhejiang, Jiangsu, and Beijing all exceed 24 vehicles per 100 people, while provinces such as Jiangxi, Hunan, and Gansu have approximately 15 vehicles per 100 people. In the future, the growth of the car stock in first-tier cities is projected to be slower, approaching or reaching saturation levels after 2050, while other regions will maintain relatively faster growth rates.</p>
+<figure class="align-center" id="fig-5-2">
+<img alt="_images/fig_5_2.png" src="_images/fig_5_2.png" />
+<figcaption>
+<p><span class="caption-text">Fig. 5-2: Ownership of private passenger cars per 100 inhabitants by province (2000-2060).</span><a class="headerlink" href="#fig-5-2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="consumer-choice-for-private-passenger-vehicles">
+<h2>5.3. Consumer choice for private passenger vehicles<a class="headerlink" href="#consumer-choice-for-private-passenger-vehicles" title="Link to this heading"></a></h2>
+<p>The selection of private passenger cars is driven by multiple factors, primarily including the vehicle purchase price, per-100-kilometer energy cost, driving range, and refueling/recharging convenience. These factors collectively shape consumer decision-making behavior, and their interrelationships are illustrated in <a class="reference internal" href="#fig-5-3"><span class="std std-ref">Fig. 5-3</span></a>.</p>
+<figure class="align-center" id="fig-5-3">
+<img alt="_images/fig_5_3.png" src="_images/fig_5_3.png" />
+<figcaption>
+<p><span class="caption-text">Fig. 5-3: Main factors influencing the choice of private passenger vehicles.</span><a class="headerlink" href="#fig-5-3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="vehicle-purchase-price">
+<h3>5.3.1. Vehicle purchase price<a class="headerlink" href="#vehicle-purchase-price" title="Link to this heading"></a></h3>
+<p>The vehicle purchase price refers to the total cost actually paid by the consumer, encompassing the Manufacturer’s Suggested Retail Price (MSRP), the influence of policy incentives, and market conditions. The final price paid by the consumer equals the sum of the MSRP, insurance, and license plate costs, minus dealer discounts, local subsidies, and consumption vouchers.</p>
+<p>The evolution of this parameter is primarily driven by local government subsidy policies (e.g., national and local subsidies) and license plate costs in cities with purchase restrictions. Provincial-level discount coefficients for BEVs and PHEVs are set based on historical data (implementation of subsidy policies from 2017 to 2021). For instance, in 2019, the local subsidy was 0.3 times the national subsidy, 0.1 times in 2020, and while the local subsidy coefficient was zero in 2021, implicit discounts existed. Future price pathways are described using the price change rate parameter <span class="math notranslate nohighlight">\(\delta_{i,f}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+P_f(t)=P_f(t_0)\cdot\Pi_{i=t_0}^t (1+\delta_{i,f})\tag{5-9}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(P_f (t)\)</span> is the purchase price of a vehicle of fuel type <span class="math notranslate nohighlight">\(f\)</span> in period <span class="math notranslate nohighlight">\(t\)</span>, and <span class="math notranslate nohighlight">\(P_f (t_0)\)</span> is the purchase price of that vehicle type in the base year.</p>
+<table class="docutils align-default" id="table-5-1">
+<caption><span class="caption-text">Table 5-1: Phased change trend of purchase price.</span><a class="headerlink" href="#table-5-1" title="Link to this table"></a></caption>
 <thead>
-<tr class="row-odd"><th class="head"><p>列1</p></th>
-<th class="head"><p>列2</p></th>
-<th class="head"><p>列3</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Fuel Type</p></th>
+<th class="head text-left"><p>2025–2030</p></th>
+<th class="head text-left"><p>2030–2045</p></th>
+<th class="head text-left"><p>2045–2060</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>A</p></td>
-<td><p>B</p></td>
-<td><p>C</p></td>
+<tr class="row-even"><td class="text-left"><p>BEV</p></td>
+<td class="text-left"><p>Rapid decline (battery cost-driven)</p></td>
+<td class="text-left"><p>Stabilization or slow decline (marginal improvements)</p></td>
+<td class="text-left"><p>Most affordable</p></td>
 </tr>
-<tr class="row-odd"><td><p>D</p></td>
-<td><p>E</p></td>
-<td><p>F</p></td>
+<tr class="row-odd"><td class="text-left"><p>PHEV</p></td>
+<td class="text-left"><p>Slight decline (dependent on dual systems)</p></td>
+<td class="text-left"><p>Remains basically stable</p></td>
+<td class="text-left"><p>Demand decreases → Price rebounds or product exits market</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>GASL</p></td>
+<td class="text-left"><p>Remains stable or increases slightly</p></td>
+<td class="text-left"><p>Accelerated increase (rising environmental costs)</p></td>
+<td class="text-left"><p>Sharp decrease → Price structure becomes</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>DIESEL</p></td>
+<td class="text-left"><p>Slight increase (due to restrictions)</p></td>
+<td class="text-left"><p>Significant increase (ban on sales/use)</p></td>
+<td class="text-left"><p>Basically exits the market</p></td>
 </tr>
 </tbody>
 </table>
-<p>如 <a class="reference internal" href="#my-table"><span class="std std-ref">表 1</span></a> 所示，我们展示了一个简单的表格示例。</p>
+<table class="docutils align-default" id="table-5-2">
+<caption><span class="caption-text">Table 5-2: Price change rate of different fuel types.</span><a class="headerlink" href="#table-5-2" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Fuel Type</p></th>
+<th class="head"><p>2025–2030</p></th>
+<th class="head"><p>2030–2045</p></th>
+<th class="head"><p>2045–2060</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>BEV</p></td>
+<td><p>–5%/yr</p></td>
+<td><p>–1.5%/yr</p></td>
+<td><p>–0.5~0%/yr</p></td>
+</tr>
+<tr class="row-odd"><td><p>PHEV</p></td>
+<td><p>–2%/yr</p></td>
+<td><p>0%/yr</p></td>
+<td><p>1%/yr</p></td>
+</tr>
+<tr class="row-even"><td><p>GASL</p></td>
+<td><p>0~1%/yr</p></td>
+<td><p>2%/yr</p></td>
+<td><p>3~4%/yr</p></td>
+</tr>
+<tr class="row-odd"><td><p>DIESEL</p></td>
+<td><p>1%/yr</p></td>
+<td><p>4%/yr</p></td>
+<td><p>5%/yr</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="energy-cost-per-100-km">
+<h3>5.3.2. Energy cost per 100 km<a class="headerlink" href="#energy-cost-per-100-km" title="Link to this heading"></a></h3>
+<p>The energy cost per 100 km measures the monetary value of energy consumed per 100 km driven. For BEVs, it is the product of electricity consumption per 100 km and the electricity price; for gasoline/diesel vehicles (GASL/DIESEL), it is the product of fuel consumption per 100 km and the fuel price; for PHEVs, a comprehensive calculation is required. The formula is as follows:</p>
+<div class="math notranslate nohighlight">
+\[
+C_{p,k} (t)=EC_{p,k} (t)\cdot\alpha_{p,k}\cdot P_{p,k}^{\text{fuel}}(t)\tag{5-10}
+\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(C_{p,k} (t)\)</span> is the cost for province <span class="math notranslate nohighlight">\(p\)</span> and vehicle type <span class="math notranslate nohighlight">\(k\)</span> in period <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(EC_{p,k} (t)\)</span> is the NEDC standard energy consumption, <span class="math notranslate nohighlight">\(\alpha_{p,k}\)</span> is a province-specific adjustment coefficient, and <span class="math notranslate nohighlight">\(P_{p,k}^{\text{fuel}} (t)\)</span> is the fuel price per unit. BEV energy efficiency is modeled based on an S-curve technological diffusion path derived from IEA physical limits. Fuel consumption for internal combustion engine vehicles remains stable. PHEV fuel consumption is constant, with efficiency improvements relying on increased electric range. Fuel price evolution is based on a green transition scenario: electricity prices first rise, then fall due to renewables, while oil prices experience a long-term moderate increase due to carbon taxes.</p>
+</section>
+<section id="driving-range">
+<h3>5.5.5. Driving range<a class="headerlink" href="#driving-range" title="Link to this heading"></a></h3>
+<p>Driving range refers to the maximum distance a vehicle can travel on a full energy supply and is a key consideration for NEV users. The range for conventional vehicles is assumed constant. The range for NEVs is determined by cell energy density <span class="math notranslate nohighlight">\(ED_{f=\text{NEV}} (t)\)</span>, battery pack mass <span class="math notranslate nohighlight">\(M_{\text{pack}}\)</span>, battery pack integration efficiency <span class="math notranslate nohighlight">\(\eta_{\text{pack}} (t)\)</span>, and energy consumption <span class="math notranslate nohighlight">\(EC_{p,f=\text{NEV}}(t)\cdot \alpha_{p,f=\text{NEV}}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+Range_{p,f=\text{NEV}} (t)=\frac{ED_{p,f=\text{NEV}} (t)\cdot M_{\text{pack}}\cdot \eta_{\text{pack}} (t)}{EC_{p,f=\text{NEV}} (t)\cdot\alpha_{p,f=\text{NEV}}}\times 100\%\tag{5-11}
+\]</div>
+<p>The industry average cell energy density <span class="math notranslate nohighlight">\(ED_{\text{avg}}(t)\)</span> is the market-share-weighted average of different technology pathways:</p>
+<div class="math notranslate nohighlight">
+\[
+ED_{\text{avg}}(t)=\sum_{\varphi}s_{\varphi}(t)\cdot ED_{\varphi}(t)\tag{5-12}
+\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(s_{\varphi}(t)\)</span> is the market share of technology <span class="math notranslate nohighlight">\(\varphi\)</span> (e.g., NMC, LFP, Li-S/Li-Air), and the specific energy density <span class="math notranslate nohighlight">\(ED_{\varphi}(t)\)</span> follows an S-curve of technological progress.</p>
+</section>
+<section id="refueling-recharging-convenience">
+<h3>5.3.4. Refueling/Recharging convenience<a class="headerlink" href="#refueling-recharging-convenience" title="Link to this heading"></a></h3>
+<p>Refueling/recharging convenience quantifies infrastructure accessibility and is crucial for NEV adoption. The convenience index for each province is defined by the ratio of infrastructure density to vehicle stock:</p>
+<div class="math notranslate nohighlight">
+\[
+ERAI_{p,f}(t)=\frac{RI_{p,f}(t)/Area_p}{V_{p,f}(t)}\tag{5-13}
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(RI_{p,f}(t)\)</span> is the number of refueling/recharging facilities (e.g., charging points, gas stations), <span class="math notranslate nohighlight">\(Area_p\)</span> the provincial area, and <span class="math notranslate nohighlight">\(V_{p,f}(t)\)</span> is the vehicle ownership. Convenience for BEV is measured by the ratio of public charging point density to BEV stock; convenience for ICEV is measured by the ratio of gas station density to total ICEV ownership; convenience for PHEV considers the ratio combining private charging point density (relative to PHEV stock) and gas station density. The evolution of the vehicle-to-infrastructure ratio follows national planning targets. The ratio between public and private charging points, <span class="math notranslate nohighlight">\(\Psi_p (t)\)</span>, is defined by system consistency constraints:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{R_{\text{public}}} = \frac{V_{p,f=\text{BEV}}(t) + V_{p,f=\text{PHEV}}(t)}{Charge_{\text{public}_p}(t)} \tag{5-14}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{R_{\text{private}}} = \frac{V_{p,f=\text{BEV}}(t) + V_{p,f=\text{PHEV}}(t)}{Charge_{\text{private}_p}(t)} \tag{5-15}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{R_{\text{total}}} = \frac{V_{p,f=\text{BEV}}(t) + V_{p,f=\text{PHEV}}(t)}{Charge_{\text{public}_p}(t) + Charge_{\text{private}_p}(t)} \tag{5-16}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{R_{\text{total}}} = \frac{1}{R_{\text{public}}} + \frac{1}{R_{\text{private}}} \tag{5-17}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Psi_p(t) = \frac{R_{\text{public}_p}(t)}{R_{\text{private}_p}(t)} \tag{5-18}
+\]</div>
+</section>
+</section>
+<section id="projection-for-buses-and-taxis">
+<h2>5.4. Projection for buses and taxis<a class="headerlink" href="#projection-for-buses-and-taxis" title="Link to this heading"></a></h2>
+<p>The projection for the public bus and taxi stock uses a demand-driven capacity planning model, implemented in three steps.</p>
+<p><strong>Predicting Public Transport Passenger Volume:</strong> Provincial public transport passenger volume is projected using multiple linear regression based on population, GDP per capita, and private car ownership. Regarding historical data, statistics before 2017 included buses/taxis and rail transit; post-2018 data are reported separately; from 2020, taxi and ferry passenger volumes are included. These changes are considered in our estimation.</p>
+<p><strong>Estimating Bus/Taxi Share:</strong> The variable ‘share of bus/taxi passenger volume’ is constructed. Its future trend is estimated using machine learning methods based on its historical nonlinear relationship with urbanization rates. This share is assumed to change dynamically with urbanization, considering factors like new subway line openings (e.g., assumed for Qinghai, Tibet around 2030).</p>
+<p><strong>Deriving Vehicle Stock from Service Intensity:</strong> The vehicle stock is derived using provincial ‘service intensity’ (passengers carried per vehicle per year). Service intensity is obtained by fitting the relationship between annual passenger volume and the number of operational vehicles over the past five years, using a weighted average method. The future vehicle stock is then calculated based on the forecasted passenger volume and this service intensity.</p>
+<figure class="align-center" id="fig-5-4">
+<a class="reference internal image-reference" href="_images/fig_5_4.png"><img alt="_images/fig_5_4.png" src="_images/fig_5_4.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 5-4: National bus and taxi stock forecast (2020-2060).</span><a class="headerlink" href="#fig-5-4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="table-5-3">
+<caption><span class="caption-text">Table 5-3: Regional grouping based on subway availability.</span><a class="headerlink" href="#table-5-3" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Group</p></th>
+<th class="head text-left"><p>Description</p></th>
+<th class="head text-left"><p>Region</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>G1</p></td>
+<td class="text-left"><p>Subway opened early (&lt;1997)</p></td>
+<td class="text-left"><p>Beijing, Shanghai</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>G2</p></td>
+<td class="text-left"><p>Subway not yet opened (as of 2023)</p></td>
+<td class="text-left"><p>Hainan, Qinghai, Tibet, Ningxia</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>G3</p></td>
+<td class="text-left"><p>Subway opened between 1997-2005</p></td>
+<td class="text-left"><p>Guangdong, Tianjin, Hubei, Jilin, Liaoning, Jiangsu, Chongqing</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>G4</p></td>
+<td class="text-left"><p>Subway opened between 2009-2014</p></td>
+<td class="text-left"><p>Sichuan, Henan, Heilongjiang, Zhejiang, Hunan, Shaanxi, Yunnan</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>G5</p></td>
+<td class="text-left"><p>Subway opened in 2015</p></td>
+<td class="text-left"><p>Fujian, Jiangxi, Shandong</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>G6</p></td>
+<td class="text-left"><p>Subway opened between 2016-2021</p></td>
+<td class="text-left"><p>Inner Mongolia, Anhui, Hebei, Guangxi, Gansu, Guizhou, Xinjiang, Shanxi</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="chap4.html" class="btn btn-neutral float-left" title="RMC|Steel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="chap4.html" class="btn btn-neutral float-left" title="4. Iron and steel module: RMC|Steel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="references.html" class="btn btn-neutral float-right" title="References" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

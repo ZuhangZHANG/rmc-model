@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RMC|Steel &mdash; RMC v0.1 documentation</title>
+  <title>4. Iron and steel module: RMC|Steel &mdash; RMC v0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=92fd9be5" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="RMC|Steel" href="chap5.html" />
-    <link rel="prev" title="社会经济因素" href="chap3.html" /> 
+    <link rel="prev" title="3. Socio-economic drivers" href="chap3.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,8 +46,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chap1.html">1. Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chap2.html">2. The Reference Energy System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chap3.html">社会经济因素</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">RMC|Steel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3.html">3. Socio-economic drivers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Iron and steel module: RMC|Steel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#model-structure">4.1. Model structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#main-parameter-settings">4.2. Main parameter settings</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="chap5.html">RMC|Steel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
@@ -66,7 +70,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">RMC|Steel</li>
+      <li class="breadcrumb-item active">4. Iron and steel module: RMC|Steel</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/chap4.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -76,36 +80,441 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section class="tex2jax_ignore mathjax_ignore" id="rmc-steel">
-<h1>RMC|Steel<a class="headerlink" href="#rmc-steel" title="Link to this heading"></a></h1>
-<p>下面是一个带题注的表格示例：</p>
-<table class="docutils align-default" id="my-table">
-<caption><span class="caption-text">示例表格标题</span><a class="headerlink" href="#my-table" title="Link to this table"></a></caption>
+  <section class="tex2jax_ignore mathjax_ignore" id="iron-and-steel-module-rmc-steel">
+<h1>4. Iron and steel module: RMC|Steel<a class="headerlink" href="#iron-and-steel-module-rmc-steel" title="Link to this heading"></a></h1>
+<p>The RUC-MESSAGEix-China|Steel (RMC|Steel) model is the steel-industry module within the RMC model family. It is designed to analyze the evolution of supply and demand, technological composition, energy structure, and the demand for specific energy carriers (such as hydrogen) in China’s steel industry during its low-carbon transition. The model covers 31 provincial-level administrative regions in mainland China. It incorporates, in a bottom-up manner, the major production processes and key technological details of the steel sector, and has been calibrated using empirical historical data on production capacity, output, and technology costs.</p>
+<section id="model-structure">
+<h2>4.1. Model structure<a class="headerlink" href="#model-structure" title="Link to this heading"></a></h2>
+<figure class="align-center" id="fig-4-1">
+<img alt="_images/fig_4_1.png" src="_images/fig_4_1.png" />
+<figcaption>
+<p><span class="caption-text">Fig. 4-1: Technology process connection diagram of RMC|Steel Model.</span><a class="headerlink" href="#fig-4-1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>As shown in <a class="reference internal" href="#fig-4-1"><span class="std std-ref">Fig. 4-1</span></a>, the RMC|Steel model mainly models raw material processing, pig iron smelting, and crude steel smelting, and does not involve the subsequent processing of steel coils, billets, and other products. Among them, raw material processing mainly includes:</p>
+<ul class="simple">
+<li><p>Coking (coking)</p></li>
+<li><p>Calcination of limestone (calcin)</p></li>
+<li><p>Sintering and pelletizing of iron ore (sint_pelle)</p></li>
+</ul>
+<p>The principal ironmaking technologies include:</p>
+<ul class="simple">
+<li><p>Blast furnace ironmaking (bf)</p></li>
+<li><p>Hydrogen-enriched blast furnace ironmaking (bf_h2)</p></li>
+<li><p>Natural gas-based direct reduced iron (dri)</p></li>
+<li><p>Hydrogen-based direct reduced iron (hdri)</p></li>
+<li><p>Hydrogen-based direct smelting reduction (hmr)</p></li>
+</ul>
+<p>The main steelmaking technologies include:</p>
+<ul class="simple">
+<li><p>Basic oxygen furnace steelmaking (bof)</p></li>
+<li><p>Electric arc furnace steelmaking using scrap as the primary feedstock (eaf_scrap)</p></li>
+<li><p>Electric arc furnace steelmaking using DRI as the main feedstock (eaf_spg)</p></li>
+</ul>
+<p>For BF, DRI, and BOF facilities, carbon capture and storage (CCS) technologies can be incorporated to mitigate CO<sub>2</sub> emissions. The BF facilities can also be retrofitted with hydrogen injection systems to achieve partial hydrogen substitution. In addition, the model provides a detailed breakdown of hydrogen production pathways, distinguishing among coal gasification, natural gas reforming, and water electrolysis from a technological perspective, each of which can be coupled with corresponding CCS technologies.</p>
+<p>The input–output relationships among these major processes and technologies are summarized in <a class="reference internal" href="#table-4-1"><span class="std std-ref">Table 4-1</span></a>.</p>
+<table class="docutils align-default" id="table-4-1">
+<caption><span class="caption-text">Table 4-1: RMC|Steel main technology input and output.</span><a class="headerlink" href="#table-4-1" title="Link to this table"></a></caption>
 <thead>
-<tr class="row-odd"><th class="head"><p>列1</p></th>
-<th class="head"><p>列2</p></th>
-<th class="head"><p>列3</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Technology</p></th>
+<th class="head text-left"><p>Imput</p></th>
+<th class="head text-left"><p>Output</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>A</p></td>
-<td><p>B</p></td>
-<td><p>C</p></td>
+<tr class="row-even"><td class="text-left"><p>BF</p></td>
+<td class="text-left"><p>coke, elec, raw iron, qklime</p></td>
+<td class="text-left"><p>molten iron</p></td>
 </tr>
-<tr class="row-odd"><td><p>D</p></td>
-<td><p>E</p></td>
-<td><p>F</p></td>
+<tr class="row-odd"><td class="text-left"><p>DRI</p></td>
+<td class="text-left"><p>h2, raw iron</p></td>
+<td class="text-left"><p>sponge iron</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>BOF</p></td>
+<td class="text-left"><p>molten iron, elec, qklime</p></td>
+<td class="text-left"><p>crude steel</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>EAF (sponge iron)</p></td>
+<td class="text-left"><p>sponge iron, elec</p></td>
+<td class="text-left"><p>crude steel</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>EAF (scrap)</p></td>
+<td class="text-left"><p>scrap, elec</p></td>
+<td class="text-left"><p>crude steel</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Coal to H<sub>2</sub></p></td>
+<td class="text-left"><p>coal, elec</p></td>
+<td class="text-left"><p>H<sub>2</sub></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Gas to H<sub>2</sub></p></td>
+<td class="text-left"><p>ch4, elec</p></td>
+<td class="text-left"><p>H<sub>2</sub></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Electrolysis</p></td>
+<td class="text-left"><p>elec, water</p></td>
+<td class="text-left"><p>H<sub>2</sub></p></td>
 </tr>
 </tbody>
 </table>
-<p>如 <a class="reference internal" href="chap5.html#my-table"><span class="std std-ref">表 1</span></a> 所示，我们展示了一个简单的表格示例。</p>
+</section>
+<section id="main-parameter-settings">
+<h2>4.2. Main parameter settings<a class="headerlink" href="#main-parameter-settings" title="Link to this heading"></a></h2>
+<table class="docutils align-default" id="table-4-2">
+<caption><span class="caption-text">Table 4-2: Capital expenditures（CAPEX）</span><a class="headerlink" href="#table-4-2" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Technology</p></th>
+<th class="head text-left"><p>CAPEX</p></th>
+<th class="head text-left"><p>Unit</p></th>
+<th class="head text-left"><p>Data source</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Sintering/pelletizing</p></td>
+<td class="text-left"><p>45.87</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Steelonthenet, 2023</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Limestone Calcination</p></td>
+<td class="text-left"><p>109.6</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Chumin, 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Coking</p></td>
+<td class="text-left"><p>446.2</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Reliable Plant, 2008</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BF iron-making</p></td>
+<td class="text-left"><p>211</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA-ETSAP, 2010a</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>BF w/ H<sub>2</sub> injection</p></td>
+<td class="text-left"><p>40</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BF w/ CCS</p></td>
+<td class="text-left"><p>80.24</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">He et al., 2025; Wang et al., 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>H-DRI</p></td>
+<td class="text-left"><p>580</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Christoph Heinemann et al., 2024</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BOF steel-making</p></td>
+<td class="text-left"><p>100</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA-ETSAP, 2010</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>BOF w/ CCS</p></td>
+<td class="text-left"><p>80.24</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">He et al., 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>EAF (using DRI as main feedstock)</p></td>
+<td class="text-left"><p>143</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Steelonthenet.com, 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>EAF (using scrap as main feedstock)</p></td>
+<td class="text-left"><p>143</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Steelonthenet.com, 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Coal to H<sub>2</sub></p></td>
+<td class="text-left"><p>10692</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2020; Energy Transitions Commission, 2023</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Coal to H<sub>2</sub> w/ CCS</p></td>
+<td class="text-left"><p>444</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2020</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Gas to H<sub>2</sub></p></td>
+<td class="text-left"><p>3641.3</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2020</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Gas to H<sub>2</sub> w/ CCS</p></td>
+<td class="text-left"><p>2693<br>(1488.5 in 2050)</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2020</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Electrolysis</p></td>
+<td class="text-left"><p>8296.5<br>(3583.1 in 2050)</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2020</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="table-4-3">
+<caption><span class="caption-text">Table 4-3: Fixed operation expenditures</span><a class="headerlink" href="#table-4-3" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Technology</p></th>
+<th class="head text-left"><p>Fixed OPEX</p></th>
+<th class="head text-left"><p>Unit</p></th>
+<th class="head text-left"><p>Data source</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Sintering/pelletizing</p></td>
+<td class="text-left"><p>1.835</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Arasto, 2015</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Limestone Calcination</p></td>
+<td class="text-left"><p>8.05</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">AGICO Cement Plant Equipment, 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Coking</p></td>
+<td class="text-left"><p>17.18</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Gallaher, Depro and Agency, 2002</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BF iron-making</p></td>
+<td class="text-left"><p>14.14</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Gallaher, Depro and Agency, 2002; IEA, 2013</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>BF w/ H<sub>2</sub> injection</p></td>
+<td class="text-left"><p>10</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BF w/ CCS</p></td>
+<td class="text-left"><p>4.07</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2013</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>H-DRI</p></td>
+<td class="text-left"><p>20</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Steelonthenet.com, 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BOF steel-making</p></td>
+<td class="text-left"><p>15.45</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA Greenhouse Gas R&amp;D Programme, 2024</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>BOF w/ CCS</p></td>
+<td class="text-left"><p>2.16</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2013</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>EAF (using DRI as main feedstock)</p></td>
+<td class="text-left"><p>81.24</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Vogl, Åhman and Nilsson, 2018; Benavides et al., 2024</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>EAF (using scrap as main feedstock)</p></td>
+<td class="text-left"><p>81.24</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Vogl, Åhman and Nilsson, 2018; Benavides et al., 2024</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Coal to H<sub>2</sub></p></td>
+<td class="text-left"><p>433</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Shao Le et al., 2024</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Coal to H<sub>2</sub> w/ CCS</p></td>
+<td class="text-left"><p>18</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Gas to H<sub>2</sub></p></td>
+<td class="text-left"><p>454.5</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Shao Le et al., 2024</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Gas to H<sub>2</sub> w/ CCS</p></td>
+<td class="text-left"><p>50.2</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Electrolysis</p></td>
+<td class="text-left"><p>182.5</p></td>
+<td class="text-left"><p>M$/Mtpa</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2020</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="table-4-4">
+<caption><span class="caption-text">Table 4-4: Variable operation expenditures</span><a class="headerlink" href="#table-4-4" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Technology</p></th>
+<th class="head text-left"><p>Variable OPEX</p></th>
+<th class="head text-left"><p>Unit</p></th>
+<th class="head text-left"><p>Data source</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Iron ore supply</p></td>
+<td class="text-left"><p>110.61</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Trading Economics, 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Limestone supply</p></td>
+<td class="text-left"><p>19.59</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">kq81.com, 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Coal supply</p></td>
+<td class="text-left"><p>195.89</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">National Bureau of Statistics of China, 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Natural gas supply</p></td>
+<td class="text-left"><p>694</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">CEIC Data, 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Electricity supply</p></td>
+<td class="text-left"><p>0.085</p></td>
+<td class="text-left"><p>M$/GWh</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">State-owned Assets Supervision and Administration Commission of the State Council, 2020</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Water supply</p></td>
+<td class="text-left"><p>0.676</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">CEIC Data, 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Scrap supply</p></td>
+<td class="text-left"><p>349.8</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">CSteelNews, 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Sintering/pelletizing</p></td>
+<td class="text-left"><p>20</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Rahbari et al., 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Coal to H<sub>2</sub></p></td>
+<td class="text-left"><p>434.1</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Shao Le et al., 2024</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Coal to H<sub>2</sub> w/ CCS</p></td>
+<td class="text-left"><p>0</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p>-</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Gas to H<sub>2</sub></p></td>
+<td class="text-left"><p>338.5</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Shao Le et al., 2024</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Gas to H<sub>2</sub> w/ CCS</p></td>
+<td class="text-left"><p>0</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p>-</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Electrolysis</p></td>
+<td class="text-left"><p>0</p></td>
+<td class="text-left"><p>M$/Mt</p></td>
+<td class="text-left"><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="table-4-5">
+<caption><span class="caption-text">Table 4-5: Carbon emission factor</span><a class="headerlink" href="#table-4-5" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Technology</p></th>
+<th class="head text-left"><p>Emission factor</p></th>
+<th class="head text-left"><p>Unit</p></th>
+<th class="head text-left"><p>Data source</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Sintering/pelletizing</p></td>
+<td class="text-left"><p>0.2</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">CSteelNews, 2023; Steelonthenet, 2025; ZHAO Zedong, LI Jiaxuan, and LI Yuanye, 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Limestone Calcination</p></td>
+<td class="text-left"><p>1</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Shenlan Environmental Protection Industry Development Co., Ltd., 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Coking</p></td>
+<td class="text-left"><p>0.794</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Steelonthenet, 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BF iron-making</p></td>
+<td class="text-left"><p>1.22</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Steelonthenet, 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>BF w/ H<sub>2</sub> injection</p></td>
+<td class="text-left"><p>0.67</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Zhang et al., 2024; OECD, 2025</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BF w/ CCS</p></td>
+<td class="text-left"><p>0.0523</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Santos et al., 2013</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>H-DRI</p></td>
+<td class="text-left"><p>0.04</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Rechberger et al., 2020</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>BOF steel-making</p></td>
+<td class="text-left"><p>0.181</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Nancy Margolis and Ross Brindle, 2000; European Commission. Joint Research Centre., 2022; steelonthenet, 2025</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>BOF w/ CCS</p></td>
+<td class="text-left"><p>0.03</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Butterworth, 2024</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>EAF (using DRI as main feedstock)</p></td>
+<td class="text-left"><p>0.03</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">European Commission. Joint Research Centre., 2022</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>EAF (using scrap as main feedstock)</p></td>
+<td class="text-left"><p>0.03</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">European Commission. Joint Research Centre., 2022</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Coal to H<sub>2</sub></p></td>
+<td class="text-left"><p>20.1</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2019</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Coal to H<sub>2</sub> w/ CCS</p></td>
+<td class="text-left"><p>2.1</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">IEA, 2019</span></a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Gas to H<sub>2</sub></p></td>
+<td class="text-left"><p>10.13</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Baltac et al., 2022</span></a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Gas to H<sub>2</sub> w/ CCS</p></td>
+<td class="text-left"><p>2.32</p></td>
+<td class="text-left"><p>t-CO<sub>2</sub>/t-output</p></td>
+<td class="text-left"><p><a class="reference internal" href="references.html"><span class="std std-doc">Baltac et al., 2022</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="chap3.html" class="btn btn-neutral float-left" title="社会经济因素" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="chap3.html" class="btn btn-neutral float-left" title="3. Socio-economic drivers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="chap5.html" class="btn btn-neutral float-right" title="RMC|Steel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
