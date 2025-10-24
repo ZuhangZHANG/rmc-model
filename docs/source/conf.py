@@ -18,7 +18,7 @@ extensions = [
     'myst_parser',       # 支持 Markdown
     # 'sphinx_markdown_tables', # 支持 Markdown 表格
     'sphinx.ext.mathjax', # 数学公式
-    'sphinx.ext.autosectionlabel',  # 必须添加这个才能使用交叉引用
+    'sphinx.ext.autosectionlabel',  # 交叉引用
 ]
 
 myst_enable_extensions = [
@@ -28,7 +28,7 @@ myst_enable_extensions = [
     "deflist",
 ]
 
-# 确保使用 MathJax 3.x 的路径
+# MathJax 3.x 路径（用于渲染数学公式）
 mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
 mathjax3_config = {
@@ -56,6 +56,7 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_rtd_theme'
+
 html_static_path = ['_static']
 
 

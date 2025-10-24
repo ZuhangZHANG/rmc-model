@@ -12,10 +12,11 @@ The RUC-MESSAGEix-China (RMC) model is a provincial-scale energy-economy-environ
    :maxdepth: 2
    :caption: Contents
    
-   introduction
-   socio_econ
-   ref_ener_sys
-   rmc_steel
+   chap1
+   chap2
+   chap3
+   chap4
+   chap5
    references
 
 
