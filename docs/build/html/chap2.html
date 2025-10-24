@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="社会经济因素" href="chap3.html" />
+    <link rel="next" title="3. Socio-economic drivers" href="chap3.html" />
     <link rel="prev" title="1. Overview" href="chap1.html" /> 
 </head>
 
@@ -48,11 +48,23 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">2. The Reference Energy System</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#energy-resource-endowments">2.1. Energy resource endowments</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#fossil-fuel-reserves-and-resources">2.1.1. Fossil fuel reserves and resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#biomass-resources">2.1.2. Biomass resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wind-and-solar-resource">2.1.3. Wind and Solar Resource</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#power-system">2.2. Power System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#generation-technologies">2.2.1. Generation technologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#capital-costs">2.2.2. Capital costs</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="chap3.html">社会经济因素</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-energy-conversion">2.3. Other energy conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#technological-advancement">2.4. Technological advancement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#energy-demand">2.5. Energy demand</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap3.html">3. Socio-economic drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3.html#population">3.1. Population</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3.html#id1">经济增长</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chap4.html">RMC|Steel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chap5.html">RMC|Steel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
@@ -108,23 +120,719 @@
 <table class="docutils align-default" id="table-2-1">
 <caption><span class="caption-text">Table 2-1: Calculated results of China’s fossil fuel resources in the RMC model.</span><a class="headerlink" href="#table-2-1" title="Link to this table"></a></caption>
 <thead>
-<tr class="row-odd"><th class="head"><p>列1</p></th>
-<th class="head"><p>列2</p></th>
-<th class="head"><p>列3</p></th>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head text-right"><p>Resources (ZJ)</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>A</p></td>
-<td><p>B</p></td>
-<td><p>C</p></td>
+<tr class="row-even"><td><p>Coal</p></td>
+<td class="text-right"><p>40</p></td>
 </tr>
-<tr class="row-odd"><td><p>D</p></td>
-<td><p>E</p></td>
-<td><p>F</p></td>
+<tr class="row-odd"><td><p>Conventional Oil</p></td>
+<td class="text-right"><p>0.8</p></td>
+</tr>
+<tr class="row-even"><td><p>Unconventional Oil</p></td>
+<td class="text-right"><p>0.6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Conventional Gas</p></td>
+<td class="text-right"><p>1.6</p></td>
+</tr>
+<tr class="row-even"><td><p>Unconventional Gas</p></td>
+<td class="text-right"><p>1.3</p></td>
+</tr>
+</tbody>
+</table>
+<p>China’s coal resources account for approximately 90% of total fossil resource estimates. Oil and natural gas are relatively scarce, with 1.4 ZJ and 2.9 ZJ resources, respectively.</p>
+<p>Drawing from multiple sources of information, mainly from some literature and reports (<a class="reference internal" href="references.html"><span class="std std-doc">McGlade and Ekins, 2015; China National Administration of Coal Geology, 2016; Li, 2019; Ministry of Natural Resources of the People’s Republic of China, 2021; Welsby et al., 2021</span></a>), the supply costs of fossil fuels across the country have been estimated. <a class="reference internal" href="#fig-2-3"><span class="std std-ref">Fig. 2-3</span></a> presents the cumulative national resource supply curves for coal, oil, and gas in the RMC model. The resources represented by different color shades indicate different resource categories.</p>
+<figure class="align-center" id="fig-2-3">
+<a class="reference internal image-reference" href="_images/fig_2_3.png"><img alt="_images/fig_2_3.png" src="_images/fig_2_3.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-3: Cumulative national resource supply curves for coal (top), oil (middle), and gas (bottom) in the model.</span><a class="headerlink" href="#fig-2-3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Coal is the largest and most widely distributed fossil fuel resource in China. Every province except Shanghai has coal resources. In terms of spatial distribution, coal resources are more abundant in the north than in the south. Xinjiang and Inner Mongolia are the two regions with the largest coal resources, followed by Shanxi and Shaanxi. These four provinces in the north account for approximately 79% of the country’s coal resources collectively. The distribution of conventional oil is also mainly in the northern regions, such as Xinjiang, Gansu, Shaanxi, Heilongjiang, and Shandong, all possessing more than 1 Gt of conventional onshore resources. Coastal provinces, including Hainan, Tianjin, and Guangdong, possess offshore oil resources. Unconventional oil, primarily in the form of shale oil, is highly concentrated and mainly distributed in Liaoning, Xinjiang, and Jilin. The distribution patterns of conventional and unconventional natural gas are similar, with Sichuan, Shaanxi, and Inner Mongolia rich in both resources. Thanks to its developed coal industry, Shanxi and Inner Mongolia also have a significant amount of coalbed methane (CBM) resources. Hainan and Guangdong have large offshore natural gas resources that are yet to be exploited. <a class="reference internal" href="#fig-2-4"><span class="std std-ref">Fig. 2-4</span></a> to <a class="reference internal" href="#fig-2-11"><span class="std std-ref">Fig. 2-11</span></a> show the regional distribution of different resource categories.</p>
+<figure class="align-center" id="fig-2-4">
+<a class="reference internal image-reference" href="_images/fig_2_4.png"><img alt="_images/fig_2_4.png" src="_images/fig_2_4.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-4: Regional distribution of remaining recoverable explored coal resources (Gt).</span><a class="headerlink" href="#fig-2-4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-2-5">
+<a class="reference internal image-reference" href="_images/fig_2_5.png"><img alt="_images/fig_2_5.png" src="_images/fig_2_5.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-5: Regional distribution of remaining recoverable predicted coal resources (Gt).</span><a class="headerlink" href="#fig-2-5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-2-6">
+<a class="reference internal image-reference" href="_images/fig_2_6.png"><img alt="_images/fig_2_6.png" src="_images/fig_2_6.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-6: Regional distribution of remaining recoverable conventional onshore oil (Gt).</span><a class="headerlink" href="#fig-2-6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-2-7">
+<a class="reference internal image-reference" href="_images/fig_2_7.png"><img alt="_images/fig_2_7.png" src="_images/fig_2_7.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-7: Regional distribution of remaining recoverable offshore oil (Gt).</span><a class="headerlink" href="#fig-2-7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-2-8">
+<a class="reference internal image-reference" href="_images/fig_2_8.png"><img alt="_images/fig_2_8.png" src="_images/fig_2_8.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-8: Regional distribution of remaining recoverable unconventional oil (Gt).</span><a class="headerlink" href="#fig-2-8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-2-9">
+<a class="reference internal image-reference" href="_images/fig_2_9.png"><img alt="_images/fig_2_9.png" src="_images/fig_2_9.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-9: Regional distribution of remaining recoverable conventional onshore gas (Tcm).</span><a class="headerlink" href="#fig-2-9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-2-10">
+<a class="reference internal image-reference" href="_images/fig_2_10.png"><img alt="_images/fig_2_10.png" src="_images/fig_2_10.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-10: Regional distribution of remaining recoverable offshore gas (Tcm).</span><a class="headerlink" href="#fig-2-10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-2-11">
+<a class="reference internal image-reference" href="_images/fig_2_11.png"><img alt="_images/fig_2_11.png" src="_images/fig_2_11.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-11: Regional distribution of remaining recoverable unconventional gas (Tcm).</span><a class="headerlink" href="#fig-2-11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="biomass-resources">
+<h3>2.1.2. Biomass resources<a class="headerlink" href="#biomass-resources" title="Link to this heading"></a></h3>
+<p>Biomass energy is a potentially important renewable energy resource in the RMC model. This includes both commercial and non-commercial use. Commercial refers to the use of bioenergy in, for example, power plants or biofuel refineries, while non-commercial refers to the use of bioenergy for residential heating and cooking, primarily in rural households. The estimates of the national biomass resource potential in the model combine multiple sources (<a class="reference internal" href="references.html"><span class="std std-doc">Zhang, 2018; Hanssen et al., 2020; Kang et al., 2020; Nie et al., 2020; Biomass Energy Industry Promotion Association et al., 2021; Tian et al., 2021; Biomass Energy Industry Promotion Association and Energy Foundation, 2023; Wang Rui et al., 2023</span></a>). The biomass resources in the model include agricultural residues, forestry residues, energy crops, municipal sewage, municipal solid waste, and animal manure.</p>
+<p><a class="reference internal" href="#table-2-2"><span class="std std-ref">Table 2-2</span></a> shows the total volume, collectible volume, and energy utilization potential of China’s biomass resources in the RMC model. The energy use potential is the amount obtained by deducting non-energy uses from the collectible volume. Relying on developed agriculture and animal husbandry, more than 60% of the national total biomass resources come from agricultural residues and animal manure. In southern provinces such as Guangxi and Yunnan, abundant forest resources also provide considerable potential for biomass development. It is noteworthy that despite the substantial potential for growing energy crops across the country, the associated market and industry systems remain underdeveloped. Consequently, it is anticipated that a considerable period will be required for these crops to emerge as the primary source of biomass utilization within China.</p>
+<table class="docutils align-default" id="table-2-2">
+<caption><span class="caption-text">Table 2-2: The scale and utilization potential of biomass resources in China (EJ).</span><a class="headerlink" href="#table-2-2" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head text-right"><p>Total resource</p></th>
+<th class="head text-right"><p>Collectable resource</p></th>
+<th class="head text-right"><p>Energy use potential</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Agricultural</p></td>
+<td class="text-right"><p>15.3</p></td>
+<td class="text-right"><p>13.3</p></td>
+<td class="text-right"><p>4.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Animal manure</p></td>
+<td class="text-right"><p>22.7</p></td>
+<td class="text-right"><p>22.7</p></td>
+<td class="text-right"><p>7.6</p></td>
+</tr>
+<tr class="row-even"><td><p>Energy crops</p></td>
+<td class="text-right"><p>16.0</p></td>
+<td class="text-right"><p>16.0</p></td>
+<td class="text-right"><p>16.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Forestry</p></td>
+<td class="text-right"><p>5.9</p></td>
+<td class="text-right"><p>5.9</p></td>
+<td class="text-right"><p>2.6</p></td>
+</tr>
+<tr class="row-even"><td><p>Municipal sewage</p></td>
+<td class="text-right"><p>0.2</p></td>
+<td class="text-right"><p>0.2</p></td>
+<td class="text-right"><p>0.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Municipal solid waste</p></td>
+<td class="text-right"><p>1.7</p></td>
+<td class="text-right"><p>1.7</p></td>
+<td class="text-right"><p>1.7</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="fig-2-12">
+<a class="reference internal image-reference" href="_images/fig_2_12.png"><img alt="_images/fig_2_12.png" src="_images/fig_2_12.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Fig. 2-12: Regional distribution of total biomass potential (PJ).</span><a class="headerlink" href="#fig-2-12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="wind-and-solar-resource">
+<h3>2.1.3. Wind and Solar Resource<a class="headerlink" href="#wind-and-solar-resource" title="Link to this heading"></a></h3>
+<p>Wind and solar energy, as clean and renewable sources, are of strategic importance for China to achieve its carbon neutrality goal by 2060. Currently, China’s installed capacity of wind and solar power ranks among the highest in the world, yet the development level remains relatively low, accounting for only a small fraction of its vast technical potential, indicating substantial room for growth in resource utilization. The model calibrates the potential of wind and solar resources across provinces by referencing multiple sources, including GIS-based refined assessment studies and annual reports from the China Meteorological Administration (<a class="reference internal" href="references.html"><span class="std std-doc">Wang et al., 2022; Chinese Academy of Environmental Planning, 2024; China Meteorological Administration, 2025</span></a>).</p>
+<p>Spatially, wind-rich areas are primarily concentrated in western, northern, and coastal provinces, while solar resources are predominantly located in the western and northern regions, with the ‘three north’ area hosting the majority of the national potential. Specifically, the national technical potential for wind power is approximately 10.9 TW, and for solar power, about 45.6 TW. Overall, China possesses abundant renewable energy resources sufficient to support its energy transition, and future macro-level planning for wind and solar energy bases, along with distributed development, should focus on key regions.</p>
+<table class="docutils align-default" id="table-2-3">
+<caption><span class="caption-text">Table 2-3: Wind and solar power resource potential by province.</span><a class="headerlink" href="#table-2-3" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Region</p></th>
+<th class="head"><p>Installed Capacity (GW)</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p>Generation (TWh)</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p><strong>Wind</strong></p></td>
+<td><p>Onshore wind</p></td>
+<td><p>Offshore wind</p></td>
+<td><p><strong>PV</strong></p></td>
+<td><p>Central PV</p></td>
+<td><p>Distributed PV</p></td>
+<td><p><strong>Wind</strong></p></td>
+<td><p><strong>PV</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Inner Mongolia</p></td>
+<td><p>2697</p></td>
+<td><p>2697</p></td>
+<td><p>0</p></td>
+<td><p>9460</p></td>
+<td><p>9230</p></td>
+<td><p>230</p></td>
+<td><p>7143</p></td>
+<td><p>14167</p></td>
+</tr>
+<tr class="row-even"><td><p>Heilongjiang</p></td>
+<td><p>706</p></td>
+<td><p>706</p></td>
+<td><p>0</p></td>
+<td><p>301</p></td>
+<td><p>149</p></td>
+<td><p>152</p></td>
+<td><p>1937</p></td>
+<td><p>394</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jilin</p></td>
+<td><p>304</p></td>
+<td><p>304</p></td>
+<td><p>0</p></td>
+<td><p>356</p></td>
+<td><p>243</p></td>
+<td><p>113</p></td>
+<td><p>861</p></td>
+<td><p>466</p></td>
+</tr>
+<tr class="row-even"><td><p>Liaoning</p></td>
+<td><p>289</p></td>
+<td><p>176</p></td>
+<td><p>113</p></td>
+<td><p>191</p></td>
+<td><p>17</p></td>
+<td><p>174</p></td>
+<td><p>777</p></td>
+<td><p>238</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gansu</p></td>
+<td><p>321</p></td>
+<td><p>321</p></td>
+<td><p>0</p></td>
+<td><p>2758</p></td>
+<td><p>2682</p></td>
+<td><p>76</p></td>
+<td><p>718</p></td>
+<td><p>4128</p></td>
+</tr>
+<tr class="row-even"><td><p>Ningxia</p></td>
+<td><p>82</p></td>
+<td><p>82</p></td>
+<td><p>0</p></td>
+<td><p>282</p></td>
+<td><p>253</p></td>
+<td><p>29</p></td>
+<td><p>241</p></td>
+<td><p>391</p></td>
+</tr>
+<tr class="row-odd"><td><p>Qinghai</p></td>
+<td><p>186</p></td>
+<td><p>186</p></td>
+<td><p>0</p></td>
+<td><p>3914</p></td>
+<td><p>3886</p></td>
+<td><p>28</p></td>
+<td><p>379</p></td>
+<td><p>6491</p></td>
+</tr>
+<tr class="row-even"><td><p>Shanxi</p></td>
+<td><p>165</p></td>
+<td><p>165</p></td>
+<td><p>0</p></td>
+<td><p>372</p></td>
+<td><p>298</p></td>
+<td><p>75</p></td>
+<td><p>448</p></td>
+<td><p>458</p></td>
+</tr>
+<tr class="row-odd"><td><p>Xinjiang</p></td>
+<td><p>618</p></td>
+<td><p>618</p></td>
+<td><p>0</p></td>
+<td><p>21198</p></td>
+<td><p>21054</p></td>
+<td><p>144</p></td>
+<td><p>1293</p></td>
+<td><p>29265</p></td>
+</tr>
+<tr class="row-even"><td><p>Beijing</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>61</p></td>
+<td><p>2</p></td>
+<td><p>59</p></td>
+<td><p>0</p></td>
+<td><p>72</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hebei</p></td>
+<td><p>334</p></td>
+<td><p>281</p></td>
+<td><p>53</p></td>
+<td><p>338</p></td>
+<td><p>59</p></td>
+<td><p>279</p></td>
+<td><p>988</p></td>
+<td><p>587</p></td>
+</tr>
+<tr class="row-even"><td><p>Shandong</p></td>
+<td><p>596</p></td>
+<td><p>296</p></td>
+<td><p>300</p></td>
+<td><p>417</p></td>
+<td><p>21</p></td>
+<td><p>395</p></td>
+<td><p>1636</p></td>
+<td><p>552</p></td>
+</tr>
+<tr class="row-odd"><td><p>Shanxi</p></td>
+<td><p>127</p></td>
+<td><p>127</p></td>
+<td><p>0</p></td>
+<td><p>311</p></td>
+<td><p>194</p></td>
+<td><p>117</p></td>
+<td><p>364</p></td>
+<td><p>439</p></td>
+</tr>
+<tr class="row-even"><td><p>Tianjin</p></td>
+<td><p>15</p></td>
+<td><p>11</p></td>
+<td><p>4</p></td>
+<td><p>42</p></td>
+<td><p>0</p></td>
+<td><p>42</p></td>
+<td><p>42</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chongqing</p></td>
+<td><p>43</p></td>
+<td><p>43</p></td>
+<td><p>0</p></td>
+<td><p>22</p></td>
+<td><p>1</p></td>
+<td><p>21</p></td>
+<td><p>108</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Guizhou</p></td>
+<td><p>109</p></td>
+<td><p>109</p></td>
+<td><p>0</p></td>
+<td><p>104</p></td>
+<td><p>76</p></td>
+<td><p>28</p></td>
+<td><p>296</p></td>
+<td><p>105</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sichuan</p></td>
+<td><p>223</p></td>
+<td><p>223</p></td>
+<td><p>0</p></td>
+<td><p>157</p></td>
+<td><p>75</p></td>
+<td><p>82</p></td>
+<td><p>621</p></td>
+<td><p>182</p></td>
+</tr>
+<tr class="row-even"><td><p>Xizang</p></td>
+<td><p>524</p></td>
+<td><p>524</p></td>
+<td><p>0</p></td>
+<td><p>3332</p></td>
+<td><p>3327</p></td>
+<td><p>4</p></td>
+<td><p>1375</p></td>
+<td><p>6177</p></td>
+</tr>
+<tr class="row-odd"><td><p>Guangdong</p></td>
+<td><p>677</p></td>
+<td><p>141</p></td>
+<td><p>536</p></td>
+<td><p>202</p></td>
+<td><p>19</p></td>
+<td><p>182</p></td>
+<td><p>1977</p></td>
+<td><p>257</p></td>
+</tr>
+<tr class="row-even"><td><p>Guangxi</p></td>
+<td><p>250</p></td>
+<td><p>181</p></td>
+<td><p>69</p></td>
+<td><p>187</p></td>
+<td><p>101</p></td>
+<td><p>86</p></td>
+<td><p>708</p></td>
+<td><p>222</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hainan</p></td>
+<td><p>246</p></td>
+<td><p>45</p></td>
+<td><p>201</p></td>
+<td><p>29</p></td>
+<td><p>10</p></td>
+<td><p>19</p></td>
+<td><p>563</p></td>
+<td><p>33</p></td>
+</tr>
+<tr class="row-even"><td><p>Yunnan</p></td>
+<td><p>132</p></td>
+<td><p>132</p></td>
+<td><p>0</p></td>
+<td><p>115</p></td>
+<td><p>60</p></td>
+<td><p>55</p></td>
+<td><p>374</p></td>
+<td><p>159</p></td>
+</tr>
+<tr class="row-odd"><td><p>Henan</p></td>
+<td><p>291</p></td>
+<td><p>291</p></td>
+<td><p>0</p></td>
+<td><p>303</p></td>
+<td><p>14</p></td>
+<td><p>289</p></td>
+<td><p>869</p></td>
+<td><p>377</p></td>
+</tr>
+<tr class="row-even"><td><p>Hubei</p></td>
+<td><p>206</p></td>
+<td><p>206</p></td>
+<td><p>0</p></td>
+<td><p>157</p></td>
+<td><p>33</p></td>
+<td><p>124</p></td>
+<td><p>558</p></td>
+<td><p>188</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hunan</p></td>
+<td><p>174</p></td>
+<td><p>174</p></td>
+<td><p>0</p></td>
+<td><p>91</p></td>
+<td><p>9</p></td>
+<td><p>83</p></td>
+<td><p>462</p></td>
+<td><p>96</p></td>
+</tr>
+<tr class="row-even"><td><p>Jiangxi</p></td>
+<td><p>152</p></td>
+<td><p>152</p></td>
+<td><p>0</p></td>
+<td><p>97</p></td>
+<td><p>27</p></td>
+<td><p>70</p></td>
+<td><p>423</p></td>
+<td><p>109</p></td>
+</tr>
+<tr class="row-odd"><td><p>Anhui</p></td>
+<td><p>225</p></td>
+<td><p>225</p></td>
+<td><p>0</p></td>
+<td><p>233</p></td>
+<td><p>11</p></td>
+<td><p>222</p></td>
+<td><p>679</p></td>
+<td><p>280</p></td>
+</tr>
+<tr class="row-even"><td><p>Fujian</p></td>
+<td><p>321</p></td>
+<td><p>32</p></td>
+<td><p>289</p></td>
+<td><p>91</p></td>
+<td><p>18</p></td>
+<td><p>73</p></td>
+<td><p>957</p></td>
+<td><p>102</p></td>
+</tr>
+<tr class="row-odd"><td><p>Jiangsu</p></td>
+<td><p>441</p></td>
+<td><p>177</p></td>
+<td><p>264</p></td>
+<td><p>302</p></td>
+<td><p>5</p></td>
+<td><p>297</p></td>
+<td><p>1200</p></td>
+<td><p>372</p></td>
+</tr>
+<tr class="row-even"><td><p>Shanghai</p></td>
+<td><p>55</p></td>
+<td><p>10</p></td>
+<td><p>45</p></td>
+<td><p>38</p></td>
+<td><p>0</p></td>
+<td><p>37</p></td>
+<td><p>150</p></td>
+<td><p>51</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zhejiang</p></td>
+<td><p>429</p></td>
+<td><p>50</p></td>
+<td><p>379</p></td>
+<td><p>112</p></td>
+<td><p>4</p></td>
+<td><p>108</p></td>
+<td><p>1163</p></td>
+<td><p>121</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>National</strong></p></td>
+<td><p><strong>10948</strong></p></td>
+<td><p><strong>8694</strong></p></td>
+<td><p><strong>2254</strong></p></td>
+<td><p><strong>45604</strong></p></td>
+<td><p><strong>41878</strong></p></td>
+<td><p><strong>3726</strong></p></td>
+<td><p><strong>29308</strong></p></td>
+<td><p><strong>66529</strong></p></td>
 </tr>
 </tbody>
 </table>
 </section>
+</section>
+<section id="power-system">
+<h2>2.2. Power System<a class="headerlink" href="#power-system" title="Link to this heading"></a></h2>
+<p>The RMC model covers a full range of electricity generation, transmission, and storage in and between the 31 provinces’ power systems. It can run with an annual time resolution consistent with other modules and or be soft-linked with a dedicated power system model CPOST with an hourly resolution (8760 hours for a modeled year) to capture more detailed features in the power system. The spatial resolution and technologies in the power system are consistent between RMC and CPOST. Description of the CPOST model is available from its documentation (<a class="reference internal" href="references.html"><span class="std std-doc">Renmin University of China, 2025</span></a>).</p>
+<section id="generation-technologies">
+<h3>2.2.1. Generation technologies<a class="headerlink" href="#generation-technologies" title="Link to this heading"></a></h3>
+<p>The power system encompasses a variety of power generation technologies, including fossil fuel-based generation, nuclear, and renewable energy like hydro, wind, solar, and biomass power generation, along with energy storage and transmission facilities.
+In coal-fired power generation, there are advanced technologies such as large ultra-supercritical and supercritical units, as well as relatively low-efficiency subcritical technologies. Gas-fired power generation includes large combined cycle gas turbine (CCGT) units and conventional open-cycle gas turbine (OCGT) power generation technologies. The system has also taken into account the integration of carbon capture and storage (CCS) technology within power generation units. The following shows the list of generation technologies, including both fossil and renewables in the model.</p>
+<ul class="simple">
+<li><p>Coal w/o CCS: ultra-supercritical units (USC), supercritical units (SC), and subcritical units (Sub-C);</p></li>
+<li><p>Coal w/ CCS: ultra-supercritical units with CCS, supercritical units with CCS;</p></li>
+<li><p>Gas w/o CCS: combined cycle gas turbine (CCGT) and open cycle gas turbine (OCGT);</p></li>
+<li><p>Gas w/ CCS: CCGT with CCS and OCGT with CCS;</p></li>
+<li><p>Biomass w/ CCS;</p></li>
+<li><p>Biomass w/o CCS;</p></li>
+<li><p>Solar: centralized/distributed photovoltaic (PV) power station and solar thermal power plant (concentrated solar power, CSP);</p></li>
+<li><p>Wind: onshore/offshore wind;</p></li>
+<li><p>Nuclear.</p></li>
+</ul>
+<p>Note that CCS is treated as an ‘add-on’ technology to the parent technology, e.g., coal-fired ultra-supercritical units or biomass power plants. More details on how CCS is modeled can be found in the MESSAGEix document.</p>
+</section>
+<section id="capital-costs">
+<h3>2.2.2. Capital costs<a class="headerlink" href="#capital-costs" title="Link to this heading"></a></h3>
+<p><a class="reference internal" href="#table-2-4"><span class="std std-ref">Table 2-4</span></a> shows the cost trajectory of power generation technologies in a baseline scenario with references to several studies (<a class="reference internal" href="references.html"><span class="std std-doc">McElroy et al., 2009; Lu et al., 2021; IEA, 2022, 2023b, 2023a, 2024; National Bureau of Statistics of China, 2022, 2023, 2024; Wang et al., 2022; China Meteorological Administration, 2023; Ember, 2023; CEIC, 2024; Dianchacha, 2024; EMBER, 2024</span></a>). The model allows for adjustments to the cost of each specific generation technology in different scenario designs.</p>
+<table class="docutils align-default" id="table-2-4">
+<caption><span class="caption-text">Table 2-4: Capital cost assumptions for generation technologies in RMC (unit: US$/kW).</span><a class="headerlink" href="#table-2-4" title="Link to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Technology</p></th>
+<th class="head text-left"><p>2025</p></th>
+<th class="head text-left"><p>2030</p></th>
+<th class="head text-left"><p>2035</p></th>
+<th class="head text-left"><p>2040</p></th>
+<th class="head text-left"><p>2045</p></th>
+<th class="head text-left"><p>2050</p></th>
+<th class="head text-left"><p>2055</p></th>
+<th class="head text-left"><p>2060</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Coal w/o CCS</p></td>
+<td class="text-left"><p>631</p></td>
+<td class="text-left"><p>606</p></td>
+<td class="text-left"><p>583</p></td>
+<td class="text-left"><p>563</p></td>
+<td class="text-left"><p>546</p></td>
+<td class="text-left"><p>533</p></td>
+<td class="text-left"><p>523</p></td>
+<td class="text-left"><p>514</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Coal w/ CCS</p></td>
+<td class="text-left"><p>1015</p></td>
+<td class="text-left"><p>932</p></td>
+<td class="text-left"><p>860</p></td>
+<td class="text-left"><p>798</p></td>
+<td class="text-left"><p>753</p></td>
+<td class="text-left"><p>719</p></td>
+<td class="text-left"><p>695</p></td>
+<td class="text-left"><p>668</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Gas w/o CCS</p></td>
+<td class="text-left"><p>325</p></td>
+<td class="text-left"><p>315</p></td>
+<td class="text-left"><p>306</p></td>
+<td class="text-left"><p>298</p></td>
+<td class="text-left"><p>291</p></td>
+<td class="text-left"><p>286</p></td>
+<td class="text-left"><p>282</p></td>
+<td class="text-left"><p>278</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Gas w/ CCS</p></td>
+<td class="text-left"><p>678</p></td>
+<td class="text-left"><p>617</p></td>
+<td class="text-left"><p>564</p></td>
+<td class="text-left"><p>519</p></td>
+<td class="text-left"><p>487</p></td>
+<td class="text-left"><p>463</p></td>
+<td class="text-left"><p>446</p></td>
+<td class="text-left"><p>427</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Hydro</p></td>
+<td class="text-left"><p>2168</p></td>
+<td class="text-left"><p>2059</p></td>
+<td class="text-left"><p>1966</p></td>
+<td class="text-left"><p>1873</p></td>
+<td class="text-left"><p>1873</p></td>
+<td class="text-left"><p>1873</p></td>
+<td class="text-left"><p>1873</p></td>
+<td class="text-left"><p>1873</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Nuclear</p></td>
+<td class="text-left"><p>2311</p></td>
+<td class="text-left"><p>2242</p></td>
+<td class="text-left"><p>2173</p></td>
+<td class="text-left"><p>2103</p></td>
+<td class="text-left"><p>2034</p></td>
+<td class="text-left"><p>1965</p></td>
+<td class="text-left"><p>1910</p></td>
+<td class="text-left"><p>1865</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Solar PV (distributed)</p></td>
+<td class="text-left"><p>393</p></td>
+<td class="text-left"><p>336</p></td>
+<td class="text-left"><p>279</p></td>
+<td class="text-left"><p>256</p></td>
+<td class="text-left"><p>235</p></td>
+<td class="text-left"><p>216</p></td>
+<td class="text-left"><p>201</p></td>
+<td class="text-left"><p>189</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Solar PV (central)</p></td>
+<td class="text-left"><p>493</p></td>
+<td class="text-left"><p>394</p></td>
+<td class="text-left"><p>296</p></td>
+<td class="text-left"><p>272</p></td>
+<td class="text-left"><p>251</p></td>
+<td class="text-left"><p>232</p></td>
+<td class="text-left"><p>217</p></td>
+<td class="text-left"><p>205</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Solar PV (thermal)</p></td>
+<td class="text-left"><p>2329</p></td>
+<td class="text-left"><p>1491</p></td>
+<td class="text-left"><p>1400</p></td>
+<td class="text-left"><p>1309</p></td>
+<td class="text-left"><p>1227</p></td>
+<td class="text-left"><p>1154</p></td>
+<td class="text-left"><p>1095</p></td>
+<td class="text-left"><p>1048</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Onshore wind</p></td>
+<td class="text-left"><p>600</p></td>
+<td class="text-left"><p>521</p></td>
+<td class="text-left"><p>489</p></td>
+<td class="text-left"><p>457</p></td>
+<td class="text-left"><p>428</p></td>
+<td class="text-left"><p>402</p></td>
+<td class="text-left"><p>378</p></td>
+<td class="text-left"><p>360</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Offshore wind</p></td>
+<td class="text-left"><p>1383</p></td>
+<td class="text-left"><p>1047</p></td>
+<td class="text-left"><p>808</p></td>
+<td class="text-left"><p>778</p></td>
+<td class="text-left"><p>750</p></td>
+<td class="text-left"><p>726</p></td>
+<td class="text-left"><p>706</p></td>
+<td class="text-left"><p>690</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Biomass w/o CCS</p></td>
+<td class="text-left"><p>1290</p></td>
+<td class="text-left"><p>1231</p></td>
+<td class="text-left"><p>1191</p></td>
+<td class="text-left"><p>1150</p></td>
+<td class="text-left"><p>1113</p></td>
+<td class="text-left"><p>1080</p></td>
+<td class="text-left"><p>1053</p></td>
+<td class="text-left"><p>1032</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Biomass w/ CCS</p></td>
+<td class="text-left"><p>2321</p></td>
+<td class="text-left"><p>2108</p></td>
+<td class="text-left"><p>1936</p></td>
+<td class="text-left"><p>1784</p></td>
+<td class="text-left"><p>1668</p></td>
+<td class="text-left"><p>1580</p></td>
+<td class="text-left"><p>1515</p></td>
+<td class="text-left"><p>1445</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Battery storage</p></td>
+<td class="text-left"><p>824</p></td>
+<td class="text-left"><p>798</p></td>
+<td class="text-left"><p>773</p></td>
+<td class="text-left"><p>764</p></td>
+<td class="text-left"><p>757</p></td>
+<td class="text-left"><p>750</p></td>
+<td class="text-left"><p>744</p></td>
+<td class="text-left"><p>740</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Pumped-hydro storage</p></td>
+<td class="text-left"><p>1237</p></td>
+<td class="text-left"><p>1090</p></td>
+<td class="text-left"><p>1002</p></td>
+<td class="text-left"><p>949</p></td>
+<td class="text-left"><p>917</p></td>
+<td class="text-left"><p>898</p></td>
+<td class="text-left"><p>889</p></td>
+<td class="text-left"><p>884</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>UHV transmission</p></td>
+<td class="text-left"><p>329</p></td>
+<td class="text-left"><p>325</p></td>
+<td class="text-left"><p>315</p></td>
+<td class="text-left"><p>306</p></td>
+<td class="text-left"><p>299</p></td>
+<td class="text-left"><p>296</p></td>
+<td class="text-left"><p>295</p></td>
+<td class="text-left"><p>295</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="other-energy-conversion">
+<h2>2.3. Other energy conversion<a class="headerlink" href="#other-energy-conversion" title="Link to this heading"></a></h2>
+<p>Similar to the power system, several district heating technologies based on fossil and renewable energy sources are considered in the RMC model. These heating plants feed heat into the district heating system that is then used in the end-use sectors.</p>
+<p>Beyond electricity and centralized heat generation, there are three further subsectors of the conversion sector represented in the model, namely, liquid fuel production, gaseous fuel production, and hydrogen production.
+In addition to oil refining, the main supply technology for liquid fuels currently, the model also encompasses a variety of alternative pathways for producing liquid fuels from diverse feedstocks, such as coal liquefaction, gas-to-liquids technologies, and biomass-to-liquids technologies, with and without the integration of CCS. Gaseous fuel production technologies cover biomass gasification and coal gasification. Hydrogen production includes gasification processes for coal and biomass, steam methane reforming from natural gas, and hydrogen electrolysis.</p>
+</section>
+<section id="technological-advancement">
+<h2>2.4. Technological advancement<a class="headerlink" href="#technological-advancement" title="Link to this heading"></a></h2>
+<p>In the RMC model, technological advancements are considered as exogenous factors and vary across scenarios. However, related studies have been conducted to incorporate the endogenous aspects of technological change through learning curves within energy-engineering models, as well as to examine how technology costs are influenced by market structures.</p>
+<p>Cost and performance parameters, such as conversion efficiencies and emission factors, are typically sourced from the extant engineering studies. At the same time, alternative projections for costs and performance are formulated to account for a broad spectrum of uncertainties that significantly impact the model results for the future.</p>
+</section>
+<section id="energy-demand">
+<h2>2.5. Energy demand<a class="headerlink" href="#energy-demand" title="Link to this heading"></a></h2>
+<p>Energy service demands from end-use sectors such as industry, transportation, and residential/commercial are calculated with socio-economic development projections and exogenous to RMC. These demands are generated through the utilization of a scenario generator implemented in Python. The scenario generator correlates historical GDP per capita to final energy demands at the regional level. It extrapolates the sectoral energy service demands into the future, leveraging projections of GDP and population growth. The scenario generator runs regressions on the historical datasets to establish the relationship for each of the 31 RMC regions between the independent variable (GDP per capita) and factors such as total final energy intensity, shares of final energy among several energy end-use sectors, and shares of electricity use between the industrial and residential/commercial sectors. With the input parameters, both the final energy intensity and the sectoral distribution can be projected.</p>
+<p>Sector-specific models are under development and expected to soft-link with the RMC in the near future.</p>
 </section>
 </section>
 
@@ -133,7 +841,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="chap1.html" class="btn btn-neutral float-left" title="1. Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="chap3.html" class="btn btn-neutral float-right" title="社会经济因素" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="chap3.html" class="btn btn-neutral float-right" title="3. Socio-economic drivers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
