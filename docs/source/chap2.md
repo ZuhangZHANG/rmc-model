@@ -1,6 +1,6 @@
 # 2. The Reference Energy System
 
-The reference energy system of the RMC model encompasses a comprehensive macro energy system supply chain, which can be divided into three stages: primary energy extraction, secondary energy processing and conversion, and final energy consumption ({ref}`Fig. 2-1 <Fig. 2-1>`). The energy demand sectors consist of three major end-use consumption categories: industry, buildings, and transportation. The industrial sector includes traditional energy-intensive industries such as iron and steel, cement, petrochemicals, and chemicals, as well as general manufacturing, advanced manufacturing, and emerging sectors such as information technology. The transportation sector covers road transport, rail transport, shipping, etc., with detailed classifications of transport modes available in the relevant chapter of the RMC|Transport model. The building sector includes commercial facilities and residential households. Energy demand is represented in the model as final energy and is exogenously determined based on socio-economic development projections. The above processes are illustrated in the modeling system structure shown in the figure below.
+The reference energy system of the RMC model encompasses a comprehensive macro energy system supply chain, which can be divided into three stages: primary energy extraction, secondary energy processing and conversion, and final energy consumption ({ref}`Fig. 2-1 <Fig. 2-1>`). The energy demand sectors consist of three major end-use consumption categories: industry, buildings, and transportation. The industrial sector includes traditional energy-intensive industries such as iron and steel, cement, chemicals, general manufacturing, advanced manufacturing, and emerging sectors such as information technology. The transportation sector covers road transport, rail transport, shipping, aviation, etc., with detailed classifications of transport modes available in the relevant chapter of the RMC|Transport model. The building sector includes commercial facilities and residential households. Energy demand is represented in the model as useful energy and is exogenously determined based on socio-economic development projections. The above processes are illustrated in the modeling system structure shown in the figure below.
 
 ```{figure} _static/fig_2_1.png
 ---
@@ -10,7 +10,7 @@ align: center
 Fig. 2-1: Diagram for modeling system structure.
 ```
 
-Based on the modeling characteristics of MESSAGEix, we have energy technologies (processes) and energy commodities. The interconversion and flow of energy commodities are linked through energy technologies, thereby forming the different components of the energy system. Energy technologies are characterized by a detailed set of parameters. The figure below ({ref}`Fig. 2-2 <Fig. 2-2>`) illustrates a simplified reference energy system within this framework, showing the linkages between energy commodities and technologies, and briefly outlining the scope of the energy system. Note that this schematic does not include all possible technology combinations or inter-regional energy flows.
+There are two basic elements in the framework of MESSAGEix, namely energy technologies (also referred to as 'processes') and energy commodities. The interconversion and flow of energy commodities are linked through energy technologies (processes), thereby constituting the different components of the energy system. Energy technologies are characterized by a detailed set of parameters. The figure below ({ref}`Fig. 2-2 <Fig. 2-2>`) illustrates a simplified reference energy system within this framework, and shows the linkages between energy commodities and technologies. Note that this schematic does not include all technological routes (processes) or inter-regional energy flows covered by RMC.
 
 
 ```{figure} _static/fig_2_2.png
@@ -27,8 +27,11 @@ The current version of the model involves over 400 energy technologies from ener
 
 ### 2.1.1. Fossil fuel reserves and resources
 
-The accessibility and cost of fossil fuels play a critical role in shaping the future of the energy sector, thereby directly impacting the nature of future climate mitigation challenges. It is imperative to understand the changes in the availability of fossil fuels and their extraction costs. The assumptions on fossil energy resources in RMC are derived from a variety of sources, including national and global databases such as NBS and the United States Geological Survey (USGS), as well as reports and forecasts from diverse energy research institutes and organizations.
-'Reserves' in this model refer to the quantities of fossil fuels that have been confirmed to exist through geological assessment with a significant degree of certainty regarding their existence (proven, probable, or possible) and can be commercially extracted under current economic and technological conditions. 'Resources', a broader concept than 'reserves', includes those that have not yet been discovered, as well as those that are technologically unfeasible or economically unviable, but might be recoverable in the future, as well as those quantities that are geologically possible, but yet to be found. {ref}`Table 2-1 <Table 2-1>` shows the calculated fossil fuel resources in the RMC model for 2022. Estimating fossil fuel reserves is built on technological assumptions. With an improvement in technology, the amount that may be considered a 'reserve' vs. a 'resource' can actually vary widely.
+The accessibility and cost of fossil fuels play a critical role in shaping the future of the energy sector, thereby directly impact future climate mitigation pathways. It is imperative to understand the changes in the availability of fossil fuels and their extraction costs. The assumptions on fossil energy resources in RMC are derived from a large amount of sources, including national and global databases such as NBS and the United States Geological Survey (USGS), as well as reports and forecasts from diverse energy research institutes and organizations.
+
+‘Reserves’ in this model refer to the quantities of fossil fuels proven through geological assessment with a significant degree of certainty regarding their existence (proven, probable, or possible) and can be commercially extracted under current economic and technological conditions. ‘Resources’, a broader concept than ‘reserves’, includes those that have not yet been discovered, as well as those that are technologically unfeasible or economically uncompetitive, but might be recoverable in the future, as well as those quantities that have geological potential for extraction, but yet to be found. {ref}`Table 2-1 <Table 2-1>` shows the calculated fossil fuel resources in the RMC model for 2022. Estimating fossil fuel reserves is built on technological assumptions. With an improvement in technology, the amount that may be considered a ‘reserve’ vs. a ‘resource’ can actually vary widely.
+
+
 
 ```{table} Table 2-1: Calculated results of China's fossil fuel resources in the RMC model.
 :name: Table 2-1
@@ -44,7 +47,7 @@ The accessibility and cost of fossil fuels play a critical role in shaping the f
 
 China’s coal resources account for approximately 90% of total fossil resource estimates. Oil and natural gas are relatively scarce, with 1.4 ZJ and 2.9 ZJ resources, respectively.
 
-Drawing from multiple sources of information, mainly from some literature and reports ([McGlade and Ekins, 2015; China National Administration of Coal Geology, 2016; Li, 2019; Ministry of Natural Resources of the People’s Republic of China, 2021; Welsby et al., 2021](./references.md)), the supply costs of fossil fuels across the country have been estimated. {ref}`Fig. 2-3 <Fig. 2-3>` presents the cumulative national resource supply curves for coal, oil, and gas in the RMC model. The resources represented by different color shades indicate different resource categories. 
+Drawing from multiple sources of information, mainly from some literature and reports ([McGlade and Ekins, 2015; China National Administration of Coal Geology, 2016; Li, 2019; Ministry of Natural Resources of the People’s Republic of China, 2021; Welsby et al., 2021](./references.md)), the supply costs of fossil fuels across the country have been estimated. {ref}`Fig. 2-3 <Fig. 2-3>` presents the cumulative national resource supply curves for coal, oil, and gas in the RMC model. The blocks in different color shades indicate different resource categories. 
 
 ```{figure} _static/fig_2_3.png
 ---
@@ -161,7 +164,7 @@ width: 60%
 Fig. 2-12: Regional distribution of total biomass potential (PJ).
 ```
 
-### 2.1.3. Wind and Solar Resource
+### 2.1.3. Wind and Solar Resources
 
 Wind and solar energy, as clean and renewable sources, are of strategic importance for China to achieve its carbon neutrality goal by 2060. Currently, China’s installed capacity of wind and solar power ranks among the highest in the world, yet the development level remains relatively low, accounting for only a small fraction of its vast technical potential, indicating substantial room for growth in resource utilization. The model calibrates the potential of wind and solar resources across provinces by referencing multiple sources, including GIS-based refined assessment studies and annual reports from the China Meteorological Administration ([Wang et al., 2022; Chinese Academy of Environmental Planning, 2024; China Meteorological Administration, 2025](./references.md)).
 
@@ -210,12 +213,13 @@ Spatially, wind-rich areas are primarily concentrated in western, northern, and 
 
 ## 2.2. Power System
 
-The RMC model covers a full range of electricity generation, transmission, and storage in and between the 31 provinces’ power systems. It can run with an annual time resolution consistent with other modules and or be soft-linked with a dedicated power system model CPOST with an hourly resolution (8760 hours for a modeled year) to capture more detailed features in the power system. The spatial resolution and technologies in the power system are consistent between RMC and CPOST. Description of the CPOST model is available from its documentation ([Renmin University of China, 2025](./references.md)).
+The RMC model covers a full range of electricity generation, transmission, and storage in and between the 31 provinces’ power systems. It can run with an annual time resolution consistent with other modules and or be linked with a dedicated power system model CPOST with an hourly resolution (8760 hours for a modeled year) to capture more detailed characteristics in the power system. The spatial resolution and technologies in the power system are consistent between RMC and CPOST. Description of the CPOST model is available from its documentation ([Renmin University of China, 2025](./references.md)).
 
 ### 2.2.1. Generation technologies
 
-The power system encompasses a variety of power generation technologies, including fossil fuel-based generation, nuclear, and renewable energy like hydro, wind, solar, and biomass power generation, along with energy storage and transmission facilities. 
-In coal-fired power generation, there are advanced technologies such as large ultra-supercritical and supercritical units, as well as relatively low-efficiency subcritical technologies. Gas-fired power generation includes large combined cycle gas turbine (CCGT) units and conventional open-cycle gas turbine (OCGT) power generation technologies. The system has also taken into account the integration of carbon capture and storage (CCS) technology within power generation units. The following shows the list of generation technologies, including both fossil and renewables in the model.
+The power system encompasses a variety of power generation technologies, including fossil fuel-based generation, nuclear, and renewable energy like hydro, wind, solar, and biomass power generation, along with energy storage and transmission infrastructures.
+ 
+In coal-fired power generation, there are advanced technologies such as large ultra-supercritical and supercritical units, as well as relatively low efficient subcritical technologies. Gas-fired power generation includes large combined cycle gas turbine (CCGT) units and conventional open-cycle gas turbine (OCGT). The system has also taken into account the integration of carbon capture and storage (CCS) technology within power generation units. The following shows the list of generation technologies, including both fossil and renewables in the model.
 - Coal w/o CCS: ultra-supercritical units (USC), supercritical units (SC), and subcritical units (Sub-C);
 - Coal w/ CCS: ultra-supercritical units with CCS, supercritical units with CCS;
 - Gas w/o CCS: combined cycle gas turbine (CCGT) and open cycle gas turbine (OCGT);
@@ -261,7 +265,8 @@ Note that CCS is treated as an ‘add-on’ technology to the parent technology,
 Similar to the power system, several district heating technologies based on fossil and renewable energy sources are considered in the RMC model. These heating plants feed heat into the district heating system that is then used in the end-use sectors. 
 
 Beyond electricity and centralized heat generation, there are three further subsectors of the conversion sector represented in the model, namely, liquid fuel production, gaseous fuel production, and hydrogen production.
-In addition to oil refining, the main supply technology for liquid fuels currently, the model also encompasses a variety of alternative pathways for producing liquid fuels from diverse feedstocks, such as coal liquefaction, gas-to-liquids technologies, and biomass-to-liquids technologies, with and without the integration of CCS. Gaseous fuel production technologies cover biomass gasification and coal gasification. Hydrogen production includes gasification processes for coal and biomass, steam methane reforming from natural gas, and hydrogen electrolysis.
+
+In addition to oil refining, the main supply technology for liquid fuels currently, the model also encompasses a variety of alternative pathways for producing liquid fuels from diverse feedstocks, such as coal liquefaction, gas-to-liquids technologies, and biomass-to-liquids technologies, with and without the integration of CCS. Gaseous fuel production technologies cover biomass gasification and coal gasification. Hydrogen production includes gasification processes for coal and biomass, steam methane reforming from natural gas, and water electrolysis.
 
 ## 2.4. Technological advancement
 
@@ -271,7 +276,7 @@ Cost and performance parameters, such as conversion efficiencies and emission fa
 
 ## 2.5. Energy demand
 
-Energy service demands from end-use sectors such as industry, transportation, and residential/commercial are calculated with socio-economic development projections and exogenous to RMC. These demands are generated through the utilization of a scenario generator implemented in Python. The scenario generator correlates historical GDP per capita to final energy demands at the regional level. It extrapolates the sectoral energy service demands into the future, leveraging projections of GDP and population growth. The scenario generator runs regressions on the historical datasets to establish the relationship for each of the 31 RMC regions between the independent variable (GDP per capita) and factors such as total final energy intensity, shares of final energy among several energy end-use sectors, and shares of electricity use between the industrial and residential/commercial sectors. With the input parameters, both the final energy intensity and the sectoral distribution can be projected. 
+Energy service demands from end-use sectors such as industry, transportation, and residential/commercial are calculated with socio-economic development projections and exogenous to RMC. These demands are generated through the utilization of a scenario generator implemented in Python. The scenario generator correlates historical GDP per capita to final energy demands at the regional level. It extrapolates the sectoral energy service demands into the future, by leveraging projections of GDP and population growth. The scenario generator runs regressions on the historical datasets to establish the relationship for each of the 31 RMC regions between the independent variable (GDP per capita) and factors such as total final energy intensity, shares of final energy among several energy end-use sectors, and shares of electricity use between the industrial and residential/commercial sectors. With the input parameters, both the final energy intensity and the sectoral distribution can be projected. 
 
-Sector-specific models are under development and expected to soft-link with the RMC in the near future.
+Sector-specific models are under development and expected to link with the main RMC model in different ways.
 

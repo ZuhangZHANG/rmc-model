@@ -52,10 +52,10 @@
 <li class="toctree-l1"><a class="reference internal" href="chap4.html">4. Iron and steel module: RMC|Steel</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">5. Transport module: RMC|Transport</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#model-structure">5.1. Model structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#stock-and-structure-of-private-passenger-cars">5.2. Stock and structure of private passenger cars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelling-vehicle-stocks-and-flows">5.2. Modelling vehicle stocks and flows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#consumer-choice-for-private-passenger-vehicles">5.3. Consumer choice for private passenger vehicles</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#vehicle-purchase-price">5.3.1. Vehicle purchase price</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#energy-cost-per-100-km">5.3.2. Energy cost per 100 km</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fuel-efficiency">5.3.2. Fuel efficiency</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#driving-range">5.5.5. Driving range</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#refueling-recharging-convenience">5.3.4. Refueling/Recharging convenience</a></li>
 </ul>
@@ -92,7 +92,7 @@
              
   <section class="tex2jax_ignore mathjax_ignore" id="transport-module-rmc-transport">
 <h1>5. Transport module: RMC|Transport<a class="headerlink" href="#transport-module-rmc-transport" title="Link to this heading"></a></h1>
-<p>RMC|Transport is a module within the RMC model family focused on the transportation sector, designed to analyze supply-demand dynamics, technology and energy mix, carbon emissions, and other impacts (such as critical metal demand) during the low-carbon transition of China’s transportation sector. The model employs a stock-flow system dynamics approach for modeling. Its geographical coverage includes 31 provincial-level administrative units in mainland China. It incorporates, in a bottom-up manner, major production processes and key technological information relevant to the transportation sector, and has been calibrated based on historical data for vehicle stocks, activity levels, and technology costs.</p>
+<p>RMC|Transport is a module within the RMC model family focused on the transportation sector, designed to analyze supply-demand dynamics, technology and energy mix, carbon emissions, and other impacts (such as critical metal demand) during the low-carbon transition of China’s transportation sector. Different from the main RMC model, the transportation module employs a stock-flow system dynamics approach. Its geographical coverage includes 31 provincial-level administrative units in mainland China. It incorporates, in a bottom-up manner, major production processes and key technological information relevant to the transportation sector, and has been calibrated based on historical data for vehicle stocks, activity levels, and technology costs.</p>
 <section id="model-structure">
 <h2>5.1. Model structure<a class="headerlink" href="#model-structure" title="Link to this heading"></a></h2>
 <p>As shown in <a class="reference internal" href="#fig-5-1"><span class="std std-ref">Fig. 5-1</span></a>, RMC|Transport primarily covers the road transport sector (with future extensions planned for shipping, rail, and other transport sectors). This includes private vehicles, commercial vehicles, public service vehicles, and other road transport. The energy types considered in the model include gasoline, diesel, electricity, hydrogen, natural gas, and other alternative fuels.</p>
@@ -103,9 +103,9 @@
 </figcaption>
 </figure>
 </section>
-<section id="stock-and-structure-of-private-passenger-cars">
-<h2>5.2. Stock and structure of private passenger cars<a class="headerlink" href="#stock-and-structure-of-private-passenger-cars" title="Link to this heading"></a></h2>
-<p>The model utilizes a system dynamics approach to analyze the stock-flow relationships of private passenger cars. Let <span class="math notranslate nohighlight">\(V_{f,c,a}(t)\)</span> represent the stock of private passenger cars in year <span class="math notranslate nohighlight">\(t\)</span>, with fuel type <span class="math notranslate nohighlight">\(f\)</span>, vehicle body type <span class="math notranslate nohighlight">\(c\)</span>, and vehicle age <span class="math notranslate nohighlight">\(a\)</span>. Aggregating over age groups gives <span class="math notranslate nohighlight">\(V_{f,c}(t)=\sum_{a=0}^A V_{f,c,a}(t)\)</span>. The total stock <span class="math notranslate nohighlight">\(N(t)\)</span> is defined as the sum of stocks across all fuel-body type combinations, i.e., <span class="math notranslate nohighlight">\(N(t)=\sum_{f,c}V_{f,c}(t)\)</span>.</p>
+<section id="modelling-vehicle-stocks-and-flows">
+<h2>5.2. Modelling vehicle stocks and flows<a class="headerlink" href="#modelling-vehicle-stocks-and-flows" title="Link to this heading"></a></h2>
+<p>The model utilizes a system dynamics approach to analyze the stock-flow relationships of private passenger cars. Let <span class="math notranslate nohighlight">\(V_{f,c,a}(t)\)</span> denote the stock of private passenger cars in year <span class="math notranslate nohighlight">\(t\)</span>, with fuel type <span class="math notranslate nohighlight">\(f\)</span>, vehicle type <span class="math notranslate nohighlight">\(c\)</span>, and vehicle age <span class="math notranslate nohighlight">\(a\)</span>. Aggregating over age groups gives <span class="math notranslate nohighlight">\(V_{f,c}(t)=\sum_{a=0}^A V_{f,c,a}(t)\)</span>. The total stock <span class="math notranslate nohighlight">\(N(t)\)</span> is defined as the sum of stocks across all fuel-body type combinations, i.e., <span class="math notranslate nohighlight">\(N(t)=\sum_{f,c}V_{f,c}(t)\)</span>.</p>
 <p>Denoting the new registrations of private passenger cars in year t as <span class="math notranslate nohighlight">\(n_{f,c}(t)\)</span>, and the number of vehicles retired due to reaching end-of-life as <span class="math notranslate nohighlight">\(r_{f,c,a} (t)\)</span>, the stock-flow relationship is expressed as:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -167,7 +167,7 @@ V_{f,c,0}(t+1)=n_{f,c}(t)\tag{5-7}
 <section id="vehicle-purchase-price">
 <h3>5.3.1. Vehicle purchase price<a class="headerlink" href="#vehicle-purchase-price" title="Link to this heading"></a></h3>
 <p>The vehicle purchase price refers to the total cost actually paid by the consumer, encompassing the Manufacturer’s Suggested Retail Price (MSRP), the influence of policy incentives, and market conditions. The final price paid by the consumer equals the sum of the MSRP, insurance, and license plate costs, minus dealer discounts, local subsidies, and consumption vouchers.</p>
-<p>The evolution of this parameter is primarily driven by local government subsidy policies (e.g., national and local subsidies) and license plate costs in cities with purchase restrictions. Provincial-level discount coefficients for BEVs and PHEVs are set based on historical data (implementation of subsidy policies from 2017 to 2021). For instance, in 2019, the local subsidy was 0.3 times the national subsidy, 0.1 times in 2020, and while the local subsidy coefficient was zero in 2021, implicit discounts existed. Future price pathways are described using the price change rate parameter <span class="math notranslate nohighlight">\(\delta_{i,f}\)</span>:</p>
+<p>The evolution of this parameter is primarily driven by local government subsidy policies (e.g., national and local subsidies) and license plate costs in cities with purchase restrictions. Provincial-level discount coefficients for BEVs and PHEVs are set based on historical data (implementation of subsidy policies from 2017 to 2021). For instance, the local subsidy was approximately one thirds the national subsidy in 2019 and 10% in 2020, respectively, and phased out to zero in 2021. Future price pathways are described using the price change rate parameter <span class="math notranslate nohighlight">\(\delta_{i,f}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 P_f(t)=P_f(t_0)\cdot\Pi_{i=t_0}^t (1+\delta_{i,f})\tag{5-9}
@@ -238,9 +238,9 @@ P_f(t)=P_f(t_0)\cdot\Pi_{i=t_0}^t (1+\delta_{i,f})\tag{5-9}
 </tbody>
 </table>
 </section>
-<section id="energy-cost-per-100-km">
-<h3>5.3.2. Energy cost per 100 km<a class="headerlink" href="#energy-cost-per-100-km" title="Link to this heading"></a></h3>
-<p>The energy cost per 100 km measures the monetary value of energy consumed per 100 km driven. For BEVs, it is the product of electricity consumption per 100 km and the electricity price; for gasoline/diesel vehicles (GASL/DIESEL), it is the product of fuel consumption per 100 km and the fuel price; for PHEVs, a comprehensive calculation is required. The formula is as follows:</p>
+<section id="fuel-efficiency">
+<h3>5.3.2. Fuel efficiency<a class="headerlink" href="#fuel-efficiency" title="Link to this heading"></a></h3>
+<p>Vehicle fuel efficiency is measured by the monetary value of energy consumed per 100 km driven. For BEVs, it is the product of electricity consumption per 100 km and the electricity price; for gasoline/diesel vehicles (GASL/DIESEL), it is the product of fuel consumption per 100 km and the fuel price; for PHEVs, a comprehensive calculation is required. The formula is as follows:</p>
 <div class="math notranslate nohighlight">
 \[
 C_{p,k} (t)=EC_{p,k} (t)\cdot\alpha_{p,k}\cdot P_{p,k}^{\text{fuel}}(t)\tag{5-10}
@@ -296,7 +296,7 @@ ERAI_{p,f}(t)=\frac{RI_{p,f}(t)/Area_p}{V_{p,f}(t)}\tag{5-13}
 <p>The projection for the public bus and taxi stock uses a demand-driven capacity planning model, implemented in three steps.</p>
 <p><strong>Predicting Public Transport Passenger Volume:</strong> Provincial public transport passenger volume is projected using multiple linear regression based on population, GDP per capita, and private car ownership. Regarding historical data, statistics before 2017 included buses/taxis and rail transit; post-2018 data are reported separately; from 2020, taxi and ferry passenger volumes are included. These changes are considered in our estimation.</p>
 <p><strong>Estimating Bus/Taxi Share:</strong> The variable ‘share of bus/taxi passenger volume’ is constructed. Its future trend is estimated using machine learning methods based on its historical nonlinear relationship with urbanization rates. This share is assumed to change dynamically with urbanization, considering factors like new subway line openings (e.g., assumed for Qinghai, Tibet around 2030).</p>
-<p><strong>Deriving Vehicle Stock from Service Intensity:</strong> The vehicle stock is derived using provincial ‘service intensity’ (passengers carried per vehicle per year). Service intensity is obtained by fitting the relationship between annual passenger volume and the number of operational vehicles over the past five years, using a weighted average method. The future vehicle stock is then calculated based on the forecasted passenger volume and this service intensity.</p>
+<p><strong>Deriving Vehicle Stock from Service Intensity:</strong> The vehicle stock is derived using provincial ‘service intensity’ (passengers carried per vehicle per year). Service intensity is obtained by fitting the relationship between annual passenger volume and the number of operational vehicles over the past five years, using a weighted average method. The future vehicle stock is then calculated based on the projected passenger volume and this service intensity.</p>
 <figure class="align-center" id="fig-5-4">
 <a class="reference internal image-reference" href="_images/fig_5_4.png"><img alt="_images/fig_5_4.png" src="_images/fig_5_4.png" style="width: 70%;" />
 </a>

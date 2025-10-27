@@ -10,7 +10,7 @@ The RUC-MESSAGEix-China|Steel (RMC|Steel) model is the steel-industry module wit
 name: Fig. 4-1
 align: center
 ---
-Fig. 4-1: Technology process connection diagram of RMC|Steel Model.
+Fig. 4-1: Reference energy system of RMC|Steel Model.
 ```
 
 As shown in {ref}`Fig. 4-1 <Fig. 4-1>`, the RMC|Steel model mainly models raw material processing, pig iron smelting, and crude steel smelting, and does not involve the subsequent processing of steel coils, billets, and other products. Among them, raw material processing mainly includes:
@@ -50,7 +50,7 @@ The input–output relationships among these major processes and technologies ar
 ```
 
 
-## 4.2. Main parameter settings
+## 4.2. Parameter settings
 
 ```{table} Table 4-2: Capital expenditures（CAPEX）
 :name: Table 4-2
@@ -118,7 +118,7 @@ The input–output relationships among these major processes and technologies ar
 | Electrolysis | 0 | M$/Mt | - |
 ```
 
-```{table} Table 4-5: Carbon emission factor
+```{table} Table 4-5: Carbon emission factors
 :name: Table 4-5
 
 | Technology | Emission factor | Unit | Data source |

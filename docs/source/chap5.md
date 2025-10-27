@@ -1,6 +1,6 @@
 # 5. Transport module: RMC|Transport
 
-RMC|Transport is a module within the RMC model family focused on the transportation sector, designed to analyze supply-demand dynamics, technology and energy mix, carbon emissions, and other impacts (such as critical metal demand) during the low-carbon transition of China’s transportation sector. The model employs a stock-flow system dynamics approach for modeling. Its geographical coverage includes 31 provincial-level administrative units in mainland China. It incorporates, in a bottom-up manner, major production processes and key technological information relevant to the transportation sector, and has been calibrated based on historical data for vehicle stocks, activity levels, and technology costs.
+RMC|Transport is a module within the RMC model family focused on the transportation sector, designed to analyze supply-demand dynamics, technology and energy mix, carbon emissions, and other impacts (such as critical metal demand) during the low-carbon transition of China’s transportation sector. Different from the main RMC model, the transportation module employs a stock-flow system dynamics approach. Its geographical coverage includes 31 provincial-level administrative units in mainland China. It incorporates, in a bottom-up manner, major production processes and key technological information relevant to the transportation sector, and has been calibrated based on historical data for vehicle stocks, activity levels, and technology costs.
 
 ## 5.1. Model structure
 
@@ -15,9 +15,9 @@ align: center
 Fig. 5-1: Modeled road transport sector.
 ```
 
-## 5.2. Stock and structure of private passenger cars
+## 5.2. Modelling vehicle stocks and flows
 
-The model utilizes a system dynamics approach to analyze the stock-flow relationships of private passenger cars. Let $V_{f,c,a}(t)$ represent the stock of private passenger cars in year $t$, with fuel type $f$, vehicle body type $c$, and vehicle age $a$. Aggregating over age groups gives $V_{f,c}(t)=\sum_{a=0}^A V_{f,c,a}(t)$. The total stock $N(t)$ is defined as the sum of stocks across all fuel-body type combinations, i.e., $N(t)=\sum_{f,c}V_{f,c}(t)$.
+The model utilizes a system dynamics approach to analyze the stock-flow relationships of private passenger cars. Let $V_{f,c,a}(t)$ denote the stock of private passenger cars in year $t$, with fuel type $f$, vehicle type $c$, and vehicle age $a$. Aggregating over age groups gives $V_{f,c}(t)=\sum_{a=0}^A V_{f,c,a}(t)$. The total stock $N(t)$ is defined as the sum of stocks across all fuel-body type combinations, i.e., $N(t)=\sum_{f,c}V_{f,c}(t)$.
 
 Denoting the new registrations of private passenger cars in year t as $n_{f,c}(t)$, and the number of vehicles retired due to reaching end-of-life as $r_{f,c,a} (t)$, the stock-flow relationship is expressed as:
 
@@ -96,7 +96,7 @@ Fig. 5-3: Main factors influencing the choice of private passenger vehicles.
 
 The vehicle purchase price refers to the total cost actually paid by the consumer, encompassing the Manufacturer’s Suggested Retail Price (MSRP), the influence of policy incentives, and market conditions. The final price paid by the consumer equals the sum of the MSRP, insurance, and license plate costs, minus dealer discounts, local subsidies, and consumption vouchers.
 
-The evolution of this parameter is primarily driven by local government subsidy policies (e.g., national and local subsidies) and license plate costs in cities with purchase restrictions. Provincial-level discount coefficients for BEVs and PHEVs are set based on historical data (implementation of subsidy policies from 2017 to 2021). For instance, in 2019, the local subsidy was 0.3 times the national subsidy, 0.1 times in 2020, and while the local subsidy coefficient was zero in 2021, implicit discounts existed. Future price pathways are described using the price change rate parameter $\delta_{i,f}$:
+The evolution of this parameter is primarily driven by local government subsidy policies (e.g., national and local subsidies) and license plate costs in cities with purchase restrictions. Provincial-level discount coefficients for BEVs and PHEVs are set based on historical data (implementation of subsidy policies from 2017 to 2021). For instance, the local subsidy was approximately one thirds the national subsidy in 2019 and 10% in 2020, respectively, and phased out to zero in 2021. Future price pathways are described using the price change rate parameter $\delta_{i,f}$:
 
 $$
 P_f(t)=P_f(t_0)\cdot\Pi_{i=t_0}^t (1+\delta_{i,f})\tag{5-9}
@@ -126,9 +126,9 @@ where $P_f (t)$ is the purchase price of a vehicle of fuel type $f$ in period $t
 | DIESEL | 1%/yr | 4%/yr | 5%/yr |
 ```
 
-### 5.3.2. Energy cost per 100 km 
+### 5.3.2. Fuel efficiency 
 
-The energy cost per 100 km measures the monetary value of energy consumed per 100 km driven. For BEVs, it is the product of electricity consumption per 100 km and the electricity price; for gasoline/diesel vehicles (GASL/DIESEL), it is the product of fuel consumption per 100 km and the fuel price; for PHEVs, a comprehensive calculation is required. The formula is as follows:
+Vehicle fuel efficiency is measured by the monetary value of energy consumed per 100 km driven. For BEVs, it is the product of electricity consumption per 100 km and the electricity price; for gasoline/diesel vehicles (GASL/DIESEL), it is the product of fuel consumption per 100 km and the fuel price; for PHEVs, a comprehensive calculation is required. The formula is as follows:
 
 $$
 C_{p,k} (t)=EC_{p,k} (t)\cdot\alpha_{p,k}\cdot P_{p,k}^{\text{fuel}}(t)\tag{5-10}
@@ -190,7 +190,7 @@ The projection for the public bus and taxi stock uses a demand-driven capacity p
 
 **Estimating Bus/Taxi Share:** The variable ‘share of bus/taxi passenger volume’ is constructed. Its future trend is estimated using machine learning methods based on its historical nonlinear relationship with urbanization rates. This share is assumed to change dynamically with urbanization, considering factors like new subway line openings (e.g., assumed for Qinghai, Tibet around 2030).
 
-**Deriving Vehicle Stock from Service Intensity:** The vehicle stock is derived using provincial ‘service intensity’ (passengers carried per vehicle per year). Service intensity is obtained by fitting the relationship between annual passenger volume and the number of operational vehicles over the past five years, using a weighted average method. The future vehicle stock is then calculated based on the forecasted passenger volume and this service intensity.
+**Deriving Vehicle Stock from Service Intensity:** The vehicle stock is derived using provincial ‘service intensity’ (passengers carried per vehicle per year). Service intensity is obtained by fitting the relationship between annual passenger volume and the number of operational vehicles over the past five years, using a weighted average method. The future vehicle stock is then calculated based on the projected passenger volume and this service intensity.
 
 ```{figure} _static/fig_5_4.png
 ---
