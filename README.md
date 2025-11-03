@@ -1,4 +1,4 @@
-# RUC-MESSAGEix-China (RMC) documentation
+# Documentation of RUC-MESSAGEix-China (RMC)
 
 [![Documentation Status](https://readthedocs.org/projects/rmc-model/badge/?version=latest)](https://rmc-model.readthedocs.io/en/latest/?badge=latest)
 
